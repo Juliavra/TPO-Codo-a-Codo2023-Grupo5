@@ -68,9 +68,9 @@ BODY {
     background-color: #006600;
     font-family: verdana;
    /* font-size: 50pt;*/
-   font-size: 4rem;
+   font-size: 1rem;
     font-weight: 900;
     color: rgb(240, 136, 8);
-    border: 10px solid #99c;
+  /*  border: 10px solid #99c;*/
 }
 

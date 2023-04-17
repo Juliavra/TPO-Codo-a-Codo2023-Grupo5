@@ -79,7 +79,7 @@
             <br>
             *** ETIQUETAS header y demás
             <br>
-   <!--
+   <!-- 
             Etiquetas semánticas
             Veamos un listado de las etiquetas semánticas que se introducen en HTML5 (los encabezados ya
             existían en versiones anteriores):
@@ -214,3 +214,262 @@ del viewport es 800px, nuestro div medirá 400px.
 </body>
 
 </html>
+<!--JAVASCRIPT NOTES-->
+<!-- += x += y x = x + y -->
+<!--
+Tipos de datos
+• Undefined 
+• Boolean 
+• Number 
+• String 
+• BigInt 
+• Symbol 
+• Null 
+• Object 
+• Function 
+-->
+<!--
+var s="Julian";
+console.log(typeof s);
+-->
+<!--
+Objeto Number
+var a = new Number('123'); // a es igual a 123
+var b = Number('123'); // b es igual a 123
+console.log("a: ", a);
+console.log("b: ", b);
+-->
+<!--
+// ¿Número finito?
+Number.isFinite(42); // true
+Number.isFinite(Infinity); // false, es infinito
+// ¿Número entero?
+Number.isInteger(5); // true
+Number.isInteger(4.6); // false, es decimal
+// ¿Número seguro?
+Number.isSafeInteger(1e15); // true
+Number.isSafeInteger(1e16); // false, es un valor
+no seguro
+// ¿No es un número?
+Number.isNaN(NaN); // true
+Number.isNaN(5); // false, es un número
+-->
+<!--
+Number.parseInt("42"); // 42
+Number.parseInt("42€"); // 42
+Number.parseInt("Núm. 42"); // NaN
+Number.parseInt("A"); // NaN
+-->
+<!--
+Operadores de cadena y números
+var txt1 = "Juan";
+var txt2 = "Pablo";
+var txt3 = txt1 + " " + txt2;
+console.log(txt3);
+
+var txt4 = "Bienvenidos ";
+txt4 += "a Javascript";
+console.log(txt4);
+-->
+<!--
+La función prompt()
+La función prompt es un método del objeto Window. Se utiliza para
+solicitarle al usuario que ingrese datos por medio del teclado. Recibe dos
+parámetros: el mensaje que se muestra en la ventana y el valor inicial del
+área de texto. Su sintaxis es: variable = prompt(mensaje, valor inicial)
+<script>
+var nombre = prompt ("Ingrese su nombre", "")
+document.write( "Hola " + nombre)
+</script>
+
+Uso de document.write()
+document.write() nos permite escribir directamente dentro del propio
+documento HTML.
+<html>
+<head>
+<title>Título de la página</title>
+<script>
+document.write("Hola mundo (HTML)");
+</script>
+</head>
+<body>
+</body>
+</html>
+-->
+<!--
+-->
+  <!-- 
+var nota = 7;
+console.log("El examen a resultado:");
+// Condición
+if (nota < 5) {
+// Acción A (nota es menor que 5)
+calificacion = "suspendido";
+} else {
+// Acción B: (nota es mayor o igual que 5)
+calificacion = "aprobado";
+}
+console.log("Estoy", calificacion);
+        }
+    -->
+
+     <!--
+        // Operador ternario: (condición ? verdadero : falso)
+            var calificacion = nota < 5 ? "suspendido" : "aprobado";
+            console.log("Estoy", calificacion);
+    -->
+
+<!--
+Una buena forma de conocer en qué estado se encuentra un navegador concreto en su especificación
+de ECMAScript es consultando la tabla de compatibilidad Kangax
+https://kangax.github.io/compat-table/es6/. En dicha tabla, encontramos una columna «Desktop
+browsers» donde podemos ver el porcentaje de compatibilidad con las diferentes características de
+determinadas especificaciones de ECMAScript.
+
+Quizás, el enfoque más moderno de los mencionados es utilizar transpiladores. Sistemas como
+Babel https://babeljs.io/ son muy utilizados y se encargan de traducir de ECMAScript 6 a
+ECMAScript 5.
+
+Un polyfill no es más que una librería o código Javascript que actúa de «parche» o
+«relleno» para dotar de una característica que el navegador aún no posee, hasta que una actualización
+del navegador la implementa.
+Un fallback es algo también muy similar: un fragmento de código que el programador prepara para
+que en el caso de que algo no entre en funcionamiento, se ofrezca una alternativa
+
+La función typeof() solo sirve para variables con tipos de datos básicos o primitivos.
+console.log(typeof s); // "string" console.log(typeof
+n); // "number" console.log(typeof b); // "boolean"
+console.log(typeof u); // "undefined"
+
+
+Utilizando constructor.name
+console.log(s.constructor.name); // String console.log(n.constructor.name); //
+Number console.log(b.constructor.name); // Boolean
+console.log(u.constructor.name); // ERROR, sólo funciona con variables definidas
+
+console.log(window.a);
+OJO: Podemos utilizar el objeto especial window para acceder directamente al ámbito global
+independientemente de donde nos encontremos. Esto ocurre así porque las variables globales se
+almacenan dentro del objeto window (la pestaña actual del navegador web).
+
+let p = 0;
+
+const NAME = "Manu";
+console.log(NAME);
+
+Declaración de un objeto
+const objeto = {}; // Esto es un objeto vacío
+
+// Declaración del objeto const
+player = {
+name: "Manu", life: 99,
+strength: 10,
+};
+
+// Notación con puntos console.log(player.name); //
+Muestra "Manu" console.log(player.life); // Muestra 99
+// Notación con corchetes console.log(player["name"]); // Muestra
+"Manu" console.log(player["life"]); // Muestra 99
+
+Añadir propiedades
+// Declaración del objeto const
+player = {};
+// Añadimos mediante notación con puntos player.name =
+"Manu";
+player.life = 99;
+player.strength = 10;
+
+«hereda» una serie de métodos (del objeto Object en este caso).
+const o = {};
+o.toString(); // Devuelve '[object Object]' (Un objeto de tipo Object)
+
+NaN (Not A Number)
+El acrónimo NaN es un valor especial de Javascript que significa Not A Number (No es un
+número). Este valor se usa para representar valores imposibles o indeterminados, como por ejemplo,
+resultados matemáticos de operaciones como:
+0 / 0 (Indeterminaciones)
+4 - 'a' (Valores imposibles)
+NaN + 4 (Operaciones con NaN como operando)
+Este valor se utiliza habitualmente para detectar si una operación ha fallado o ha dado un valor no
+representable. Sin embargo, no podemos compararlo literalmente con NaN, sino que tenemos que
+usar la función Number.isNaN():
+let num = NaN;
+// La siguiente operación, contra toda lógica, es falsa num == NaN;
+// false
+// Se debe usar Number.isNaN() para comprobar si el valor es NaN Number.isNaN(num); // true
+// Si comprobamos el tipo de dato de NaN, nos dirá que es numérico typeof num; //
+number
+
+Método Descripción
+Number.isFinite(n) Comprueba si n es un número finito.
+Number.isInteger(n) Comprueba si n es un número entero.
+Number.isSafeInteger(n) Comprueba si n es un número seguro.
+Number.isNaN(n) Comprueba si n no es un número.
+
+Conversión numérica
+parseInt() y parseFloat()
+Método Descripción
+Number.parseInt(s) Convierte una cadena de texto s en un número entero.
+Number.parseInt(s, radix) Idem al anterior, pero desde una base radix.
+Number.parseFloat(s) Convierte una cadena de texto s en un número decimal.
+Number.parseFloat(s,radix) Idem al anterior, pero desde una base radix.
+
+
+Objeto Math
+Constantes de Math
+Math.max(a, b,c...) Devuelve el número más grande de los indicados por parámetro.
+Math.min(a, b,c...) Devuelve el número más pequeño de los indicados por parámetro.
+
+Método Math.random()
+// Obtenemos un número al azar entre [0, 1) con 16 decimales let x = Math.random();
+// Multiplicamos dicho número por el valor máximo que buscamos (5) x = x * 5;
+// Redondeamos inferiormente, quedándonos sólo con la parte entera x = Math.floor(x);
+
+// Número al azar entre 0 y 5 (no incluido)
+const x = Math.floor(Math.random() * 5);
+
+Métodos de redondeo
+
+Método Descripción
+Math.round(x) Devuelve el redondeo de x (el entero más cercano)
+Math.ceil(x) Devuelve el redondeo superior de x. (el entero más alto)
+Math.floor(x) Devuelve el redondeo inferior de x. (el entero más bajo)
+Math.fround(x) Devuelve el redondeo de x (flotante con precisión simple)
+Math.trunc(x) Trunca el número x (devuelve sólo la parte entera)
+
+Operadores de comparación.
+Operator Description
+== equal to
+=== equal value and equal type
+!= not equal
+!== not equal value or not equal type
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+? ternary operator
+Operadores lógicos
+Operator Description
+&& logical and
+|| logical or
+! logical not
+Operadores de tipo
+Operator Description
+typeof Returns the type of a variable
+instanceof Returns true if an object is an instance of an object type
+
+
+Bucles e iteraciones
+
+Tipo de bucle Descripción
+while Bucles simples.
+for Bucles clásicos por excelencia.
+do..while Bucles simples que se realizan siempre como mínimo una vez.
+for..in Bucles sobre posiciones de un array. Los veremos más adelante.
+for..of Bucles sobre elementos de un array. Los veremos más adelante.
+Array functions Bucles específicos sobre arrays. Los veremos más adelante. https://lenguajejs.com/javascript/caracteristicas/array-functions/
+
+
+
+-->
+

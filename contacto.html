@@ -7,47 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="icon" href="img/html.ico" type <title> Contacto </title>   -->
     <link rel="STYLESHEET" href="estilos.css">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?
-    family=Lato:wght@300;400&family=Open+Sans:wgh
-    t@300;400;600&family=Roboto&display=swap">
 </head>
 
 <body>
-    <div>
-        <!--Crear Banner y reemplazar-->
-        <!--ASEGURARSE QUE EL TAMAÑO SEA PROPORCIONAL A LA PANTALLA-->
-        <h6> <a href="../index.html"> Home</a>
-            <a href="../bio.html"> Bio</a>
-            <a href="../obras.html"> Obras</a>
-            <a href="../contacto.html"> Contacto</a>
-        </h6>
-    </div>
+    <header>         LA MEJOR BANDA DE TODOS LOS TIEMPOS, DE LA ÚLTIMA SEMANA
+    </header>
+    <nav>
+        <div>
+               <h6> <a href="../index.html"> Home</a>
+                <a href="../bio.html"> Bio</a>
+                <a href="../obras.html"> Obras</a>
+                <a href="../contacto.html"> Contacto</a>
+            </h6>
+        </div>
+    </nav>
 
-    <div>
-        <h6>Formulario de contacto</h6>
-    </div>
+<nav>
+
+</nav>
+<!--
+Etiquetas semánticas
+● <header> Se coloca en el body y es la cabecera visual de la página o de una
+sección (logotipo, título, etc.). No confundir con <head>, que es el encabezado
+del documento HTML.
+● <nav> Apartado de navegación (enlaces de secciones, categorías, etc...).
+También permite dividir en categorías una sección.
+● <main> Contenido principal del body
+● <footer> Pie de página (del documento completo) o de una sección.
+● <section> Define una sección en un documento
+● <aside> Agrupación de contenido no relacionado con el tema principal del
+documento. Suele usarse para agregar publicidad.
+● <article> Artículo. Parte principal de un escrito (posts en blogs, artículos en
+diarios, mensajes en foros, comentarios, etc.)
+● <address> Agrupación con la información de contacto del autor del artículo o
+documento.
+-->
+    <section>
+      
+             <form action="https://formspree.io/f/mvondkre" method="POST">
 
 
 
+            <fieldset>
+                <legend>
+                    Mandate un Emilio
+                </legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                </div>
+                <div>
+                    <input type="text" name="nombre_ingresado" id="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="email" name="email_ingresado" id="email" placeholder="Ej:tu-direccion-de-correo@tu-mail.com" required>
+                </div>
+                <!--input type="number"
+             <div>
+                    <label for="dni">DNI:</label>
+                    <input type="number" name="dni_ingresado" id="dni">
+                </div>
+-->
+                <div>
+                    <label for="asunto">Asunto</label>
+                </div>
+                <div>
+                    <input type="text" name="asunto_ingresado" id="asunto" required>
+                </div>
+                <div>
+                    <label for="comentario">Comentario</label>
+                </div>
+                <div>
+                    <textarea name="comentario_ingresado" id="comentario" required cols="30" rows="10"
+                        maxlength="300"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="Spam" id="spam" value="SPAM">
+                    <label for="html">Deseo recibir Spam</label>
 
-    <div>
-        <h5> Management
-            Vaino Rigozzi
-<br>
-            Prensa
-            prensa@fabulososcadillacs.com
-            <br>    
-            Shows
-            Fabian Bottini fbottini@popartmusic.com
-        </h5>
+                </div>
+                <div>
+                    <input type="reset" value="Borrar todo">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <!--<script src="js/index.js"></script>-->
 
-    </div>
+    <script>
+        <!--var nombre = prompt ("Ingrese su Email", "")
+        ESCRIBE SOBRE EL HTML, LO QUE SE INGRESE, SECCION COMENTARIOS BLOG-->
 
+        document.write("Hola ")
 
-
-
-
+        function x() { var a = 1; console.log(a); }
+        x();
+        let e = Math.random();
+        console.log(e * 100);
+        // Número al azar entre 0 y 11 (no incluido)
+        for (i = 0; i < 5; i++) { const y = Math.floor(Math.random() * 11); console.log(y); } </script>
 </body>
 
 </html>
+
+<!--
+Función Descripción
+console.log() Muestra la información proporcionada en la consola Javascript.
+console.info() Equivalente al anterior. Se utiliza para mensajes de información.
+console.warn() Muestra información de advertencia. Aparece en amarillo.
+console.error() Muestra información de error. Aparece en rojo.
+console.clear() Limpia la consola. Equivalente a pulsar CTRL+L o escribir clear().
+
+
+-->
