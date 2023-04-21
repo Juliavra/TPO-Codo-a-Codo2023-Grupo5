@@ -6,140 +6,161 @@
     <meta http-equiv="" X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Contacto</title>
+    
+    <!--USA UNA FONT DE GOOGLE-->
+    <!--
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <style>
+        body {
+            font-family: "Quicksand", sans-serif;
+            font-size: 22px;
+        }
+    </style>
+    -->
+    <!--USA UNA FONT DE GOOGLE-->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sedgwick Ave Display">
+    <style>
+        body {
+            font-family: "Sedgwick Ave Display", sans-serif;
+            font-size: 22px;
+        }
+    </style>
+    
 </head>
 
 <body>
-    <header> Philip K. Dick
+    <header>
+
     </header>
+    <div> <!-- Mandame un Emilio-->
+        <nav class="nav__btn" id="nav__btn">
+            <a href="../TPO/index.html"> Home</a>
+            <a href="../TPO/bio.html"> Bio</a>
+            <a href="../TPO/bio.html"> Obras</a>
+            <a href="../TPO/contacto.html"> Contacto</a>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <form action="https://formspree.io/f/mvondkre" method="POST" class="formulario" id="formulario">
+                <fieldset>
+                    <legend>
 
-    <nav class="nav__btn" id="nav__btn">
-        <div>
-             <a href="../index.html"> Home</a>
-                <a href="../bio.html"> Bio</a>
-                <a href="../obras.html"> Obras</a>
-                <a href="../contacto.html"> Contacto</a>
-        </div>
-    </nav>
-    <!--
-Etiquetas semánticas
-● <header> Se coloca en el body y es la cabecera visual de la página o de una
-sección (logotipo, título, etc.). No confundir con <head>, que es el encabezado
-del documento HTML.
-● <nav> Apartado de navegación (enlaces de secciones, categorías, etc...).
-También permite dividir en categorías una sección.
-● <main> Contenido principal del body
-● <footer> Pie de página (del documento completo) o de una sección.
-● <section> Define una sección en un documento
-● <aside> Agrupación de contenido no relacionado con el tema principal del
-documento. Suele usarse para agregar publicidad.
-● <article> Artículo. Parte principal de un escrito (posts en blogs, artículos en
-diarios, mensajes en foros, comentarios, etc.)
-● <address> Agrupación con la información de contacto del autor del artículo o
-documento.
--->
-    <section>
+                    </legend>
 
-
-        <form action="https://formspree.io/f/mvondkre" method="POST" class="formulario" id="formulario">
-
-            <fieldset>
-                <legend>
-                    Mandate un Emilio
-                </legend>
-
-                <div class="formulario__grupo" id="grupo__nombre">
-                    <label for="nombre" class="formulario__label">Nombre</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="nombre_ingresado" id="nombre"
-                            placeholder="Ingrese su nombre" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre_ingresado" id="nombre"
+                                placeholder="Ingrese su nombre">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
+                            contener
+                            numeros, letras y guion bajo.</p>
                     </div>
-                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener
-                        numeros, letras y guion bajo.</p>
-                </div>
 
-                <div class="formulario__grupo" id="grupo__email">
-                    <label for="email" class="formulario__label">Email</label>
-                    <div class="formulario__grupo-input">
-                        <input type="email" class="formulario__input" name="email_ingresado" id="email"
-                            placeholder="correo@correo.com" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <div class="formulario__grupo" id="grupo__email">
+                        <label for="email" class="formulario__label">Email</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="email_ingresado" id="email"
+                                placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,
+                            guiones y
+                            guion bajo.</p>
                     </div>
-                    <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y
-                        guion bajo.</p>
-                </div>
 
-                <!--input type="number"
-             <div>
-                    <label for="dni">DNI:</label>
-                    <input type="number" name="dni_ingresado" id="dni">
-                </div>
--->
-
-                <div class="formulario__grupo" id="grupo__asunto">
-                    <label for="asunto" class="formulario__label">Asunto</label>
-                    <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="asunto_ingresado" id="asunto" required>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <div class="formulario__grupo" id="grupo__asunto">
+                        <label for="asunto" class="formulario__label">Asunto</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="asunto_ingresado" id="asunto">
+                            <!--<input type="text" class="formulario__input" name="asunto_ingresado" id="asunto" required>-->
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El asunto tiene que ser de al menos 4 dígitos y solo puede
+                            contener numeros, letras y guion bajo.</p>
                     </div>
-                    <p class="formulario__input-error">El asunto tiene que ser de al menos 4 dígitos y solo puede
-                        contener numeros, letras y guion bajo.</p>
-                </div>
 
-                <div class="formulario__grupo" id="grupo__comentario">
-                    <label for="comentario" class="formulario__label">Comentario</label>
-                    <div class="formulario__grupo-input">
-
-                        <textarea name="comentario_ingresado" id="comentario" required cols="30" rows="10"
-                            maxlength="300"></textarea>
-                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    <div class="formulario__grupo" id="grupo__comentario">
+                        <label for="comentario" class="formulario__label">Comentario</label>
+                        <div class="formulario__grupo-input">
+                            <textarea name="comentario_ingresado" id="comentario" cols="30" rows="10"
+                                maxlength="300"></textarea>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El comentario tiene que ser de al menos 4 dígitos y solo
+                            puede
+                            contener numeros, letras y guion bajo.</p>
                     </div>
-                    <p class="formulario__input-error">El comentario tiene que ser de al menos 4 dígitos y solo puede
-                        contener numeros, letras y guion bajo.</p>
-                </div>
 
-                <div class="formulario__grupo" id="grupo__terminos">
-                    <label class="formulario__label">
-                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                        Acepto los Términos y Condiciones
-                    </label>
-                </div>
+                    <div class="formulario__grupo" id="grupo__terminos">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Términos y Condiciones
+                        </label>
+                    </div>
 
-                <div class="formulario__grupo" id="grupo__spam">
-                    <label class="formulario__label">
-                        <input class="formulario__checkbox" type="checkbox" name="spam" id="spam">
-                        Deseo recibir Spam
-                    </label>
-                </div>
-                <!--      <div>
+                    <div class="formulario__grupo" id="grupo__spam">
+                        <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="spam" id="spam">
+                            Deseo recibir Spam
+                        </label>
+                    </div>
+                    <!--      <div>
                     <input type="reset" value="Borrar todo">
                     <input type="submit" name="Enviar" id="Enviar" value="Enviar">
                 </div>
-              -->
-                <div class="formulario__mensaje" id="formulario__mensaje">
-                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
-                        correctamente. </p>
-                </div>
+                -->
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                            correctamente. </p>
+                    </div>
 
-                <div class="formulario__grupo formulario__grupo-btn-enviar">
-                    <button type="submit" class="formulario__btn">Enviar</button>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!
-                    </p>
-                </div>
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
+                            exitosamente!
+                        </p>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </main>
+    <footer>
 
+    </footer>
+</body>
 
+</html>
 
+<!--
+Etiquetas semánticas
+● <header> 
+● <nav> 
+● <main> 
+● <footer> 
+● <section> 
+● <aside> 
+● <article> 
+● <address> 
+-->
 
-            </fieldset>
-        </form>
-    </section>
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-
-    <!--
+<!--
+Función Descripción
+console.log() Muestra la información proporcionada en la consola Javascript.
+console.info() Equivalente al anterior. Se utiliza para mensajes de información.
+console.warn() Muestra información de advertencia. Aparece en amarillo.
+console.error() Muestra información de error. Aparece en rojo.
+console.clear() Limpia la consola. Equivalente a pulsar CTRL+L o escribir clear().
+-->
+<!--
     <script>
         
         function x() { var a = 1; console.log(a); }
@@ -149,30 +170,3 @@ documento.
         // Número al azar entre 0 y 11 (no incluido)
         for (i = 0; i < 5; i++) { const y = Math.floor(Math.random() * 11); console.log(y); } </script>
         -->
-    <!--
-        <script>
-            function iniciar() {
-            var boton = document.getElementById("enviar");
-            boton.addEventListener("click", enviarformulario); }
-            function enviarformulario() {
-            var lista = document.forms;
-            var formulario = lista[0]; console.log("lesto!");
-            formulario.submit(); }
-            window.addEventListener("load", iniciar);
-            </script>
-        -->
-
-</body>
-
-</html>
-
-<!--
-Función Descripción
-console.log() Muestra la información proporcionada en la consola Javascript.
-console.info() Equivalente al anterior. Se utiliza para mensajes de información.
-console.warn() Muestra información de advertencia. Aparece en amarillo.
-console.error() Muestra información de error. Aparece en rojo.
-console.clear() Limpia la consola. Equivalente a pulsar CTRL+L o escribir clear().
-
-
--->
