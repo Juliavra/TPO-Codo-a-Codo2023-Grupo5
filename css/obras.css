@@ -1,0 +1,173 @@
+@font-face{
+    font-family: 'Permanent Marker', cursive;
+    src: url('../fonts/PermanentMarker-Regular.ttf');
+}
+
+@font-face{
+    font-family: "Sedgwick Ave Display", cursive;
+    src: url('../fonts/SedgwickAveDisplay-Regular.ttf');
+}
+
+/*
+a{
+    font-family: 'Permanent Marker', cursive;
+    color: color: rgb(254, 232, 176); 
+}
+*/
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0px;
+}
+
+:root{
+    font-size: 20px;
+}
+
+.contenedor{
+    width: 660px;
+    height: 600px;
+    /*background-color: rgb(124, 144, 112);*/
+    background-color:#006600;
+}
+
+.disco{
+    width: 200px;
+    height: 200px;
+    margin: 5px; 
+    display: inline-block;
+}
+
+#p1{
+    width: 206px;
+    height: 210px;
+    border-color: rgb(249, 123, 34);
+    border-style: solid;
+    border-width: 3px;
+    position: absolute;
+    display: inline-block;
+    margin: auto; 
+        /* margin: 30px; */
+        /*margin-top:  30px;*/
+        /* margin: 30px 10px 20px 5px; */
+        /*padding: 30px; */
+        /* padding-top: 30px;
+        padding-left: 30px;
+        padding: 10px 20px 5px 50px; */
+        /*border-color: brown blue violet green;*/
+        /*border-width: 2px 5px 8px 10px;*/
+        /*border-style:groove double solid dotted;*/
+}
+
+#p2{
+    width: 206px;
+    height: 206px;
+    border-color: rgb(249, 123, 34);
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    display: inline-block;
+    
+    
+}
+
+/*overflow:scroll;*/
+
+header{
+    font-family: 'Permanent Marker';
+    color: orange;
+    background-color: #006600;
+    font-size: 4rem;
+    text-align: center;
+}
+
+h1{
+    font-family: Verdana, arial, Tahoma, sans-serif;
+    color: orange;
+    background-color: #006600;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h4{
+    color: rgb(254, 232, 176);
+    background-color: #006600;
+    text-align: center;
+    font-size: 2rem;
+}
+
+body {
+    font-family: Verdana, arial, Tahoma, sans-serif;
+    color: orange;
+    background-color: #006600;
+    
+}
+
+nav {
+    font-family: 'Sedgwick Ave Display';
+    font-size: 1.5rem;
+    color: orange;
+    background-color: #006600;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+/* -------Selector por ID-------------*/
+#nombre{
+    color: black;
+    font-weight: 700;
+}
+
+#email{
+    color: black;
+    font-weight: 700;
+}
+
+#asunto{
+    color: black;
+    font-weight: 700;
+}
+
+#comentario{
+    color: black;
+    font-weight: 700;
+}
+/* ----- -----  Mediaqueries ----- ----- */
+/*
+@media screen and (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario__grupo-terminos,
+    .formulario__mensaje,
+    .formulario__grupo-btn-enviar {
+        grid-column: 1;
+    }
+
+    .formulario__btn {
+        width: 100%;
+    }
+}
+*/
+/*  EJEMPLO DE UNIDADES FLEXIBLES ¡¡¡¡RESPONSIVE!!!!
+p{
+    font-size: 5vw;
+    font-size: 5vh;
+    background-color: rgba(0,255,0,0.23);
+
+}
+//EJEMPLO DE DESBORDE PARA PONER SCROLL
+.desborde{
+    width: 300px;
+    height: 100px;
+    border: 2px solid crimson;
+    overflow:scroll;
+}
+*/

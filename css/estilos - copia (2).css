@@ -1,22 +1,6 @@
-@font-face{
-    font-family: "Permanent Marker", cursive;
-    src: url('../fonts/PermanentMarker-Regular.ttf');
-}
-
-@font-face{
-    font-family: "Sedgwick Ave Display", cursive;
-    src: url('../fonts/SedgwickAveDisplay-Regular.ttf');
-}
-
-@font-face{
-    font-family: "Rock Salt", cursive;
-    src: url('../fonts/RockSalt-Regular.ttf');
-}
-
 * {
     box-sizing: border-box;
     margin: auto;
-    padding: 0px;
 }
 
 :root{
@@ -48,11 +32,6 @@ h1{
     background-color: #006600;
     text-align: center;
     font-size: 4rem;
-}
-
-h2{
-    font-family: "Sedgwick Ave Display";
-    font-size: 2rem;
 }
 
 h4{
