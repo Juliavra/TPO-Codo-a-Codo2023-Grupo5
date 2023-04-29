@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+:root{  --color1: #DBE0D1;
+        --color2: #082323;
+        --color3:#32333B;
+        --color4: #32323A;
+        --color5: #00140D;
+        --paraquesevea: black;
+        --fuente1: 'Elianto'
+        font-size: 20px
+ }
+
+
+ .header { 
+    width: 100%;
+
+    justify-content: space-between; 
+    display:grid;
+   grid-template-columns: 50% 50%;
+    /*background-image: url(../img/cielo.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size:contain;*/
+    background-color:var(--color2);
+    color:  var(--color1);
+    align-items: center;
+    font-family: 'Tw Cen MT Condensed';
+    padding-left: 5%;
+    
+
+    }
+
+.nav {
+        display: flex;
+        /*background-image: url(../img/cielo.jpg);
+        background-repeat: none;
+        background-position: center;
+        background-size:contain; */
+        background-color:var(--color2);
+        height: 20vh ;
+        color: var(--color1);
+        justify-content: end;
+        padding: 2% 15% 3% 5%; 
+        font-size: 1.5rem;
+    
+    }
+
+    .nombre{
+        font-size: 5rem ;
+        padding-left: 1.5rem ;
+    
+    }
+    
+    #links> a {
+
+        font-family: 'Tw Cen MT Condensed';
+        text-decoration: none;
+        padding:  0.5rem 1rem         ;
+        color:var(--color1)
+    
+    }
+    
+    
+    #links{
+        display: flex;
+        height: fit-content;
+    }
+
+#mainbio{ 
+ 
+    
+    background-color:var(--color1);
+    
+ }
+    
+    
+
+
+    .fila{
+        display: flex; 
+        
+        column-gap: 100px;
+    
+    }
+
+
+
+    .foto{
+        padding: 2rem;
+       
+        justify-content: end;
+        background-color: var(--color3) ;
+    
+    }
+
+    
+    .texto {  
+        padding: 2rem;
+        width: 100vw;
+     background-color: var(--color1);
+    }
+
+
+ .footer {
+        display: grid;
+        grid-area: footer;
+        background-color: var(--color2) ;
+        height: 20vh ;
+        color:  var(--color1);
+        justify-content:  center;
+    }

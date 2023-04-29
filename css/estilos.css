@@ -1,4 +1,4 @@
-@font-face{
+/*@font-face{
     font-family: "Permanent Marker", cursive;
     src: url('../fonts/PermanentMarker-Regular.ttf');
 }
@@ -21,7 +21,7 @@
 
 :root{
     font-size: 20px;
-}
+} */
 
 /*  EJEMPLO DE UNIDADES FLEXIBLES ¡¡¡¡RESPONSIVE!!!!
 p{
@@ -32,7 +32,7 @@ p{
 }
 */
 
-header{
+/* header{
     
     font-family: "Permanent Marker";
     color: orange;
@@ -86,7 +86,254 @@ main {
     width: 90%;
     margin: auto;
     padding: 40px;
+}*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
 }
+
+:root{  --color1: #DBE0D1;
+        --color2: #082323;
+        --color3:#32333B;
+        --color4: #32323A;
+        --color5: #00140D;
+        --paraquesevea: black;
+        --fuente1: 'Elianto'
+        font-size: 20px
+ }
+
+ @font-face {
+    font-family:'Elianto';
+    src:url(../FUENTE/Elianto.ttf);}
+
+    
+
+
+    .contenedor{
+    /*max-width: 120rem;*/
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5 fr;
+    grid-auto-rows: repeat(6, 1fr);
+    grid-template-areas:
+     "header     header" 
+     "main       main"
+     "section1  section1"
+     "section2  section2"
+     "section3  section3"
+     "footer    footer";
+
+  }
+  
+
+
+
+
+  .contenedor .header { 
+    width: 100%;
+    justify-content: space-between; 
+    display:grid;
+   grid-template-columns: 50% 50%;
+    grid-area: header;
+    /*background-image: url(../img/cielo.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size:contain;*/
+    background-color:var(--color2);
+    color:  var(--color1);
+    align-items: center;
+    font-family: 'Tw Cen MT Condensed';
+    padding-left: 5%;
+    
+
+    }
+
+.nombre{
+    font-size: 5rem ;
+    padding-left: 1.5rem ;
+
+}
+
+
+.contenedor .nav {
+    display: flex;
+    /*background-image: url(../img/cielo.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size:contain; */
+    background-color:var(--color2);
+    height: 20vh ;
+    color: var(--color1);
+    justify-content: end;
+    padding: 2% 15% 3% 5%; 
+    font-size: 1.5rem;
+
+}
+
+
+
+#links> a {
+
+    font-family: 'Tw Cen MT Condensed';
+    text-decoration: none;
+    padding:  0.5rem 1rem         ;
+    color:var(--color1)
+
+}
+
+
+#links{
+    display: flex;
+    height: fit-content;
+}
+
+
+.contenedor .main {
+    display: flex;
+    grid-area: main;
+    background-color:var(--color3) ;
+    height: auto ;
+    padding:2rem;
+}
+
+#libro{
+    
+    margin: 2rem 4rem 1rem 1rem;
+}
+
+.bio{
+  
+    color:var(--color1);
+    background-color: var(--paraquesevea);
+    margin: 2rem 4rem 1rem 1rem;
+    padding: 20px ;
+    
+}
+/*#foto{
+    
+    margin: 7px 10px 5px 50px;
+}
+
+
+.mas{
+    display: flex;
+    background-color: var(--color1);
+    color: var(--color5);
+    align-content: center ;
+    height: 5vh ;
+    width: 15vw;
+    align-items: center;
+
+
+
+} */
+.contenedor .section1 {
+
+
+    grid-area: section1;
+    background-image: url(../img/binario1.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size:contain;
+    background-attachment: fixed;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.transparente{
+
+    display: grid;
+    margin: 10px;
+    height: 70vh ;
+    background-color:var(--color4) ;
+    opacity: 55%;
+    padding: 10 px;
+    border-radius: 10px;
+    color:var(--color1);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*poner el p  sin opacidad  {
+    text-decoration-color: none !important;}*/
+
+.contenedor .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: section2;
+    background-color: var(--color5);
+    height: 60vh ;
+    color: #DBE0D1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 1rem ;
+}
+
+
+
+#circulo1{
+    background-image: url( );
+    
+
+}
+
+
+
+.contenedor .section2 .circulo{
+ 
+    background-color: #DBE0D1;
+    color: #000000;
+    border-radius: 50%; 
+   width: 13rem;
+   height: 13rem;
+   justify-content: center ;
+   align-content: center;
+}
+
+
+
+.contenedor .section3 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: section3;
+    background-color: var(--color5);
+    justify-content: space-around;
+    padding-bottom: 1rem ;
+    }
+
+    .titulo{
+        background-color: var(--color1);
+        color: var(--color5);}
+
+        
+
+
+        .contenedor .footer {
+    display: grid;
+    grid-area: footer;
+    background-color: var(--color2) ;
+    height: 20vh ;
+    color:  var(--color1);
+    justify-content:  center;
+}
+
+#icon{
+
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+
+}
+
+    
+
 
 .formulario {
     display: grid;
@@ -257,3 +504,76 @@ main {
     color: black;
     font-weight: 700;
 }
+
+
+
+.nombre:hover{
+
+    font-size: 6rem ;
+    animation: glitch 3s infinite;
+    animation-timing-function:cubic-bezier(1, 0, 0, 1)  ;
+}
+
+@keyframes glitch{
+
+    
+    0% { text-shadow: #b4cf06
+        0px 0px,
+        #0d22da 0px 0px; }
+
+        5% { text-shadow: #ff005d
+            -3px 0px,
+            #06ffea 3px 0px;}
+
+       10% { text-shadow: #b4cf06
+             2px 0px,
+            #0d22da -2px 0px; }
+
+            15% { text-shadow: #b4cf06
+                -1px 0px,
+                #0d22da 1px 0px; }
+        
+                20% { text-shadow: #ff005d
+                    -3px 0px,
+                    #06ffea 3px 0px;}
+        
+                25% { text-shadow: #b4cf06
+                    2px 0px,
+                    #0d22da -3px 0px; }
+
+                    26% { text-shadow: #ff005d
+                        0px 0px,
+                        #06ffea 0px 0px;}
+            
+                   35% { text-shadow: #b4cf06
+                         2px 0px,
+                        #0d22da -3px 0px; }
+            
+                        40% { text-shadow: #b4cf06
+                            -1px 0px,
+                            #0d22da 3px 0px; }
+                    
+                            45% { text-shadow: #ff005d
+                                -3px 0px,
+                                #06ffea 3px 0px;}
+                    
+                            50% { text-shadow: #b4cf06
+                                2px 0px,
+                                #0d22da -2px 0px; }
+                    49% { text-shadow: #b4cf06
+                        0px 0px,
+                        #0d22da 0px 0px; }
+                    75% { text-shadow: #b4cf06
+                        -3px 0px,
+                        #0d22da 3px 0px; }
+                
+                        76% { text-shadow: #ff005d
+                            -3px 0px,
+                            #06ffea 3px 0px;}
+                
+                        100% { text-shadow: #b4cf06
+                            0px 0px,
+                            #0d22da 0px 0px; } 
+                        
+                        
+            }
