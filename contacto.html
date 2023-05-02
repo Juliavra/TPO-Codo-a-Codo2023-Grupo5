@@ -5,175 +5,117 @@
     <meta charset="utf-8" />
     <meta http-equiv="" X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+ <!--   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">-->
     <link rel="stylesheet" href="css/estilos.css">
     <title>Contacto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
 <!--CHEQUEAR QUE LO STOY TRAYENDO DE LA CARPETA Y NO DE LA WEB-->
-<style>
-    header {
-        font-family: "Permanent Marker", sans-serif;
-    }
-</style>
-
-<style>
-h4 {
-    font-family: "Permanent Marker", sans-serif;
-}
-</style>
-
-    
-
 </head>
-<header>
-    Producer E87
-</header>
 
-<body>
-    
-    <div>
-        
-            <nav class="nav__btn" id="nav__btn">
-            <h4>
-                <!--<img src="img/Erotica_Jorgelina_Aranda_Contratapa.jpg" width="40" height="20">-->
-                <a href="../index.html"> Home</a>
-                <a href="../bio.html"> Bio</a>
-                <a href="../bio.html"> Obras</a>
-                <a href="../contacto.html"> Contacto</a>
-            </h4>
-    </nav>
-    </div>
+<body class="contenedor">
+  <header class="header">
+        <div class="nombre"> Philip K. Dick </div>
+        <nav class="nav">
+            <div id="links">
+                <a class="links" href="index.html"> Home</a>
+                <a class="links" href="bio.html"> Bio</a>
+                <a class="links" href="obras.html"> Obras</a>
+                <a class="links" href="contacto.html"> Contacto</a>
+                <a class="links" href="tpo.html"> TPO</a>
+            </div>
+        </nav>
+    </header>
 
-    <main>
-        <section>
-            <form action="https://formspree.io/f/mvondkre" method="POST" class="formulario" id="formulario">
-                <fieldset>
-                    <div class="formulario__grupo" id="grupo__nombre">
-                        <label for="nombre" class="formulario__label">Nombre</label>
-                        <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="nombre_ingresado" id="nombre"
-                                placeholder="Ingrese su nombre">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede
-                            contener
-                            numeros, letras y guion bajo.</p>
-                    </div>
+    <main class="main">
+        <div class="container">
+            <form action="main.js" class="form" id="formulario">
+            <!-- /** ! user name Input **/ -->
+            <div>
+              <label for="nombre">Nombre</label>
+              <i class="fas fa-user"></i>
+              <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" >
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+              <div class="error"></div>
+            </div>
+            <!-- /** ! Email Input **/ -->
+            <div>
+              <label for="email">Email</label>
+              <i class="far fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" />
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+              <div class="error"></div>
+            </div>
+      
+            <!-- /** ! Asunto Input **/ -->
+            <div>
+              <label for="asunto">Asunto</label>
+              <input type="text" name="asunto" id="asunto" placeholder="" />
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+              <div class="error"></div>
+            </div>
+      
+            <!-- /** ! Comentario Input **/ -->
+            <div>
+              <label for="comentario">Comentario</label>
+              <textarea name="comentario" id="comentario" cols="83  " rows="10" maxlength="300"
+                style="resize: none"></textarea>
+                <i class="fas fa-exclamation-circle failure-icon"></i>
+                <i class="far fa-check-circle success-icon"></i>
+                <div class="error"></div>
+            </div>
+      
+            <div>
+      
+              <input type="checkbox" name="terminos" id="terminos">
+              Acepto los Términos y Condiciones
+              <div class="error"></div>
+              <br>
+      
+              <input class="formulario__checkbox" type="checkbox" name="spam" id="spam">
+              Deseo recibir Spam
+              <div class="error"></div>
+            </div>
+      
+            <!-- /** ! Boton Enviar**/ -->
+            <div>
+              <button type="submit" id="submit" class="_btn">Enviar</button>
+            </div>
+          </form>
+        </div>
 
-                    <div class="formulario__grupo" id="grupo__email">
-                        <label for="email" class="formulario__label">Email</label>
-                        <div class="formulario__grupo-input">
-                            <input type="email" class="formulario__input" name="email_ingresado" id="email"
-                                placeholder="correo@correo.com">
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos,
-                            guiones y
-                            guion bajo.</p>
-                    </div>
 
-                    <div class="formulario__grupo" id="grupo__asunto">
-                        <label for="asunto" class="formulario__label">Asunto</label>
-                        <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="asunto_ingresado" id="asunto">
-                            <!--<input type="text" class="formulario__input" name="asunto_ingresado" id="asunto" required>-->
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <p class="formulario__input-error">El asunto tiene que ser de al menos 4 dígitos y solo puede
-                            contener numeros, letras y guion bajo.</p>
-                    </div>
-
-                    <div class="formulario__grupo" id="grupo__comentario">
-                        <label for="comentario" class="formulario__label">Comentario</label>
-                        <div class="formulario__grupo-input">
-                            <textarea name="comentario_ingresado" id="comentario" cols="30" rows="10"
-                                maxlength="300"></textarea>
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                        </div>
-                        <p class="formulario__input-error">El comentario tiene que ser de al menos 4 dígitos y solo
-                            puede
-                            contener numeros, letras y guion bajo.</p>
-                    </div>
-
-                    <div class="formulario__grupo" id="grupo__terminos">
-                        <label class="formulario__label">
-                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                            Acepto los Términos y Condiciones
-                        </label>
-                    </div>
-
-                    <div class="formulario__grupo" id="grupo__spam">
-                        <label class="formulario__label">
-                            <input class="formulario__checkbox" type="checkbox" name="spam" id="spam">
-                            Deseo recibir Spam
-                        </label>
-                    </div>
-                    <!--      <div>
-                    <input type="reset" value="Borrar todo">
-                    <input type="submit" name="Enviar" id="Enviar" value="Enviar">
-                </div>
-                -->
-                    <div class="formulario__mensaje" id="formulario__mensaje">
-                        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
-                            correctamente. </p>
-                    </div>
-
-                    <div class="formulario__grupo formulario__grupo-btn-enviar">
-                        <button type="submit" class="formulario__btn">Enviar</button>
-                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado
-                            exitosamente!
-                        </p>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-
-        <footer>
-            <fieldset>
-                <img src="img/instagram.png" alt"" width="40" height="40">
-                <!--
-WWW.flaticon.es  SACAR DE ESTA WEB LOS ICONOS PARA ESTA SECCION
-DESCARGAR LA IMAGEN PNG
-----COMO METER ICONO DE RED SOCIAL
--->
-            </fieldset>
-        </footer>
-        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
+         <script src="js/main.js"></script>
     </main>
+    <footer class="footer">
+        <div id="icon">
+            <a href="https://es-la.facebook.com/" target="_blank" title="Ir a Facebook"><img src="img/face.png"
+                    alt="facebook" width="25" height="25"> </a>
+            <a href="https://instagram.com" target="_blank" title="Ir a Instagram"><img src="img/insta.png"
+                    alt="instagram" width="25" height="25"></a>
+            <a href="https://twitter.com/home?lang=es" target="_blank" title="Ir a Twitter"><img src="" width="25"
+                    alt="twitter" height="25"></a>
+            <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="" alt="youtube" width="25"
+                    height="25"></a>
+        </div>
+
+        <div>
+            <p>Derechos reservados Grupo5 Codo_a_Codo</p>
+        </div>
+    </footer>
 </body>
 
 </html>
 
-<!--
-Etiquetas semánticas
-● <header> 
-● <nav> 
-● <main> 
-● <footer> 
-● <section> 
-● <aside> 
-● <article> 
-● <address> 
--->
 
-<!--
-Función Descripción
-console.log() Muestra la información proporcionada en la consola Javascript.
-console.info() Equivalente al anterior. Se utiliza para mensajes de información.
-console.warn() Muestra información de advertencia. Aparece en amarillo.
-console.error() Muestra información de error. Aparece en rojo.
-console.clear() Limpia la consola. Equivalente a pulsar CTRL+L o escribir clear().
+             <!--
+WWW.flaticon.es  SACAR DE ESTA WEB LOS ICONOS PARA ESTA SECCION
+DESCARGAR LA IMAGEN PNG
+----COMO METER ICONO DE RED SOCIAL
 -->
-<!--
-    <script>
-        
-        function x() { var a = 1; console.log(a); }
-        x();
-        let e = Math.random();
-        console.log(e * 100);
-        // Número al azar entre 0 y 11 (no incluido)
-        for (i = 0; i < 5; i++) { const y = Math.floor(Math.random() * 11); console.log(y); } </script>
-        -->
