@@ -1,0 +1,18 @@
+@font-face{
+    font-family: "Permanent Marker", cursive;
+    src: url('../fonts/PermanentMarker-Regular.ttf');
+}
+
+@font-face{
+    font-family: "Sedgwick Ave Display", cursive;
+    src: url('../fonts/SedgwickAveDisplay-Regular.ttf');
+}
+
+
+.nav__btn {
+    font-family: "Sedgwick Ave Display";
+    font-size: 1.5rem;
+    color: orange;
+    background-color: #006600;
+    text-align: center;
+}
