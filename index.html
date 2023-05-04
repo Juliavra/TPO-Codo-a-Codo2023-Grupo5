@@ -69,7 +69,34 @@
 
     <section class="section1">
         <div class="transparente">
-            <p> si es posible un slider automatico? con criticas a sus obras </p>
+            <!--CAROUSEL AQUI-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/gestarescala.jpg" style="width:100%" height="600">
+                    <div class="text"> </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/castillo.jpg" style="width:100%" height="600">
+                    <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="img/esperando el.jpg" style="width:100%" height="600">
+                    <div class="text"> </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </section>
  
@@ -112,8 +139,6 @@
 </div> 
 
     </section>
-
-
     
     <footer class="footer">
         <div id="icon">
@@ -131,7 +156,7 @@
             <p>Derechos reservados Grupo5 Codo_a_Codo</p>
         </div>
     </footer>
-
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
