@@ -99,7 +99,11 @@
         
      }
         
-    
+    .h2{
+        font-family: "jmh-typewriter.regular";
+        font-size: larger;
+        font-weight: bold;
+    }
     
 
 
@@ -113,9 +117,9 @@
 
     .foto{
         padding: 2rem;
-       
         justify-content: end;
         background-color: var(--color3) ;
+        
     
     }
 
