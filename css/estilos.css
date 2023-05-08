@@ -67,12 +67,25 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Tw Cen MT Condensed';
     padding-left: 5%;
     box-sizing: border-box;
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px */
+    @media (max-width: 768px) {
+        display: inline;
+        
+        }
 }
 
 .nombre {
     font-size: 6rem;
     padding-left: 1.5rem;
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px  */
+    @media (max-width: 768px) {
+    font-size: 4rem ;
+    }
 
+/* para dispositivos cuya anchura de pantalla sea inferior a 425px  */
+@media (max-width: 425px) {
+    font-size: 3rem ;
+    }    
 }
 
 
@@ -97,6 +110,15 @@ body::-webkit-scrollbar-thumb {
 #links {
     display: flex;
     height: fit-content;
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+@media (max-width: 768px) {
+    font-size: 1rem ;
+    display: inline
+    }    
+/* para dispositivos cuya anchura de pantalla sea inferior a 425px  */
+@media (max-width: 425px) {
+    font-size: 0.7rem ;
+    }        
 }
 
 .contenedor .main {
@@ -106,12 +128,35 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     padding: 2rem;
     justify-content: end;
+    @media (max-width: 425px) { 
+        padding: 0.5em;
+        font-size: 90%;
+        }    
 }
 
 #libro {
     margin: 0.7rem 1rem 0.7rem 1rem;
     justify-content: center;
+    @media (max-width: 425px) { 
+        margin: 0.1rem 0.3rem 0.1rem 0.3rem;
+        } 
 }
+
+.ImgLibro { 
+    width: 310px;
+    height:300px;
+    /*width="330vw" height="350vh"*/
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px*/
+    @media (max-width: 768px) { 
+        width:217px;
+        height:210px;
+        }    
+    /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+    @media (max-width: 425px) { 
+        width:155px;
+        height: 150px;
+        } 
+    }
 
 #libro>div {
     padding: 1rem;
@@ -119,6 +164,11 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--color6);
     margin: 3rem;
     box-shadow: 6px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+    @media (max-width: 425px) {         
+        font-size: 70%;
+        margin: 1rem;
+        }
 }
 
 .info {
@@ -135,6 +185,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
     box-shadow: 6px 4px 2px 1px rgba(0, 0, 0, 0.2);
     overflow: auto;
+
+    @media (max-width: 425px) { 
+        font-size: 70%;
+        }    
 }
 
 .info>div {
@@ -153,6 +207,10 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--color1);
     border-radius: 1rem;
     margin: 0.8rem;
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px lel sidebar estará oculto */
+@media (max-width: 768px) {
+    display:none;
+    }    
 }
 
 .yt1 {
@@ -253,6 +311,13 @@ h3 {
     justify-content: center;
     align-content: center;
     margin: 1.5rem;
+
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+@media (max-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    font-size:10px;
+    }     
 }
 
 .titulo {
@@ -270,6 +335,10 @@ h3 {
     color: var(--color1);
     justify-content: center;
     padding: 1rem;
+    @media (max-width: 768px) {
+        font-size:15px;
+        }     
+    
 }
 
 #icon {
