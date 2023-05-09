@@ -99,9 +99,16 @@
         
      }
         
+    .h2{
+        font-family: "orbitron";
+        font-size: larger;
+        font-weight: bold;
+    }
     
-    
-
+    span{
+        font-style: oblique;
+        
+    }
 
     .fila{
         display: flex; 
@@ -113,9 +120,9 @@
 
     .foto{
         padding: 2rem;
-       
         justify-content: end;
         background-color: var(--color3) ;
+        
     
     }
 
@@ -125,7 +132,7 @@
         width: 100vw;
      background-color: var(--color1);
      font-family: "jmh-typewriter.regular";
-     font-size: medium;
+     font-size:large;
     }
 
 
