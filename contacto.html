@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="icon" href="img/3.ico" type="image/x-icon">
-<!--CHEQUEAR QUE LO STOY TRAYENDO DE LA CARPETA Y NO DE LA WEB-->
 </head>
 
 <body class="contenedor">
   <header class="header">
-        <div class="nombre"> Contacto </div>
+        <div class="nombre"> CONTACTO </div>
         <nav class="nav">
             <div id="links">
                 <a class="links" href="index.html"> Home</a>
@@ -31,8 +30,10 @@
             <form action="main.js" class="form" id="formulario">
             <!-- /** ! user name Input **/ -->
             <div>
-              <label for="nombre">Nombre</label>
               <i class="fas fa-user"></i>
+              <label for="nombre">Nombre</label>
+            </div>
+            <div>
               <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" >
               <i class="fas fa-exclamation-circle failure-icon"></i>
               <i class="far fa-check-circle success-icon"></i>
@@ -40,9 +41,11 @@
             </div>
             <!-- /** ! Email Input **/ -->
             <div>
-              <label for="email">Email</label>
               <i class="far fa-envelope"></i>
-              <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" />
+              <label for="email">Email</label>
+            </div>
+            <div>
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" />
               <i class="fas fa-exclamation-circle failure-icon"></i>
               <i class="far fa-check-circle success-icon"></i>
               <div class="error"></div>
@@ -51,6 +54,8 @@
             <!-- /** ! Asunto Input **/ -->
             <div>
               <label for="asunto">Asunto</label>
+            </div>
+            <div>
               <input type="text" name="asunto" id="asunto" placeholder="" />
               <i class="fas fa-exclamation-circle failure-icon"></i>
               <i class="far fa-check-circle success-icon"></i>
@@ -60,7 +65,9 @@
             <!-- /** ! Comentario Input **/ -->
             <div>
               <label for="comentario">Comentario</label>
-              <textarea name="comentario" id="comentario" cols="83  " rows="10" maxlength="300"
+              </div>
+              <div>
+              <textarea name="comentario" id="comentario" cols="21  " rows="8" maxlength="300"
                 style="resize: none"></textarea>
                 <i class="fas fa-exclamation-circle failure-icon"></i>
                 <i class="far fa-check-circle success-icon"></i>
@@ -68,12 +75,10 @@
             </div>
       
             <div>
-      
               <input type="checkbox" name="terminos" id="terminos">
               Acepto los Términos y Condiciones
               <div class="error"></div>
-              <br>
-      
+           
               <input class="formulario__checkbox" type="checkbox" name="spam" id="spam">
               Deseo recibir Spam
               <div class="error"></div>
@@ -84,6 +89,7 @@
               <button type="submit" id="submit" class="_btn">Enviar</button>
             </div>
           </form>
+
         </div>
 
 
