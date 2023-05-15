@@ -3,7 +3,15 @@
     padding: 0px;
 
 }
+@font-face {
+    font-family:"jmh-typewriter.regular";
+    src: url(../fonts/jmh-typewriter.regular.ttf);
 
+    font-family:"OverpassMono";
+    src: url(../fonts/OverpassMono-VariableFont_wght.ttf);
+
+
+}
 
 :root{  --color1: #DBE0D1;
         --color2: #082323;
@@ -153,13 +161,27 @@ main{
 .obras{
     grid-area: obras;
     background-color: var(--color1);
+
+}
+
+.obras:hover div:not(:hover){
+    background-color: var(--color4);
 }
 
 .obras>div{
     padding: 2rem;
+    font-family: "OverpassMono";
+    height: 50vh;
+
 }
-.obras  * h2{
+
+.obras :hover #marte:not(:hover){
+    color: #b4cf06 ;
+}
+
+.obras  * h2{   
     margin: 1rem;
+    font-family: "orbitron";
 }
 
 
