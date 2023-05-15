@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -93,9 +94,11 @@
     }
 
     main{ 
-        box-sizing: border-box;
+        
         grid-area: main;
         background-color:var(--color1);
+        box-sizing: border-box;
+        
         
      }
         
@@ -103,6 +106,9 @@
         font-family: "orbitron";
         font-size: larger;
         font-weight: bold;
+        padding: 2rem;
+        box-sizing: border-box;
+
     }
     
     span{
@@ -112,17 +118,25 @@
 
     .fila{
         display: flex; 
+        padding: 1rem;
+        box-sizing: border-box;
+      
   
-    
+        @media (max-width: 700px) { 
+            display:inline-block;
+           
+        }   
     }
 
 
 
     .foto{
-        padding: 2rem;
-        justify-content: end;
-        background-color: var(--color3) ;
         
+        margin-left: 1.5rem;
+        box-sizing: border-box;
+        margin-top: 2rem;
+   
+   
     
     }
 
@@ -133,6 +147,12 @@
      background-color: var(--color1);
      font-family: "jmh-typewriter.regular";
      font-size:large;
+     box-sizing: border-box;
+
+     @media (max-width: 700px) { 
+        display:inline-block;
+    
+     }  
     }
 
 

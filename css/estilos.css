@@ -2,15 +2,19 @@
     box-sizing: border-box;
     margin: auto;
     padding: 0px;
+    
+    
 }
 
 :root {
     font-size: 20px;
+    
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 
 }
 
@@ -28,6 +32,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+
 :root {
     --color1: #DBE0D1;
     --color2: #082323;
@@ -36,9 +41,17 @@ body::-webkit-scrollbar-thumb {
     --color5: #00140D;
     --color6: #D38D00;
     --paraquesevea: black;
-    --fuente1: 'Elianto'
 }
 
+@font-face {
+    font-family:"jmh-typewriter.regular";
+    src: url(../fonts/jmh-typewriter.regular.ttf);
+
+    font-family:"OverpassMono";
+    src: url(../fonts/OverpassMono-VariableFont_wght.ttf);
+
+
+}
 .contenedor {
     /*max-width: 120rem;*/
     display: grid;
@@ -99,6 +112,19 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.8rem;
 }
 
+.links:hover{
+    box-shadow:5px 5px 10px var(--color5);
+    transform:scale(110%);
+    border-radius: 10px;
+    transform: rotate3d(0, 0, 1, 6.142rad);
+  
+   
+   
+
+    
+    
+}
+
 #links>a {
 
     font-family: 'Tw Cen MT Condensed';
@@ -126,7 +152,8 @@ body::-webkit-scrollbar-thumb {
     grid-area: main;
     background-color: var(--color3);
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
+    padding-top: 3rem;
     justify-content: end;
     @media (max-width: 425px) { 
         padding: 0.5em;
@@ -145,6 +172,7 @@ body::-webkit-scrollbar-thumb {
 .ImgLibro { 
     width: 310px;
     height:300px;
+    
     /*width="330vw" height="350vh"*/
     /* para dispositivos cuya anchura de pantalla sea inferior a 768px*/
     @media (max-width: 768px) { 
@@ -159,16 +187,27 @@ body::-webkit-scrollbar-thumb {
     }
 
 #libro>div {
+    font-size: 0.6rem;
     padding: 1rem;
     color: var(--color5);
     background-color: var(--color6);
     margin: 3rem;
-    box-shadow: 6px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px var(--color5); 
+    border-radius: 5px;
     /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
     @media (max-width: 425px) {         
         font-size: 70%;
         margin: 1rem;
         }
+}
+
+#libro:hover img:not(:hover){
+    transform: scale(130%);
+
+}
+
+#libro>a :hover{
+transform: scale(130%);
 }
 
 .info {
@@ -178,12 +217,15 @@ body::-webkit-scrollbar-thumb {
     height: 90%;
     color: var(--color1);
     background-color: var(--color2);
-    padding: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
+    padding: 1.4rem;
+
+    font-family:"OverpassMono";
+    font-size: 0.68rem;
+    text-shadow: 1px 1px 3px black;
+    
     text-align: justify;
     border-radius: 1rem;
-    box-shadow: 6px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px var(--color5); 
     overflow: auto;
 
     @media (max-width: 425px) { 
@@ -194,12 +236,16 @@ body::-webkit-scrollbar-thumb {
 .info>div {
 
     margin-top: 0.5rem;
+
 }
 
 .info .copete {
     margin-top: 0.2rem;
-    font-size: larger;
     margin-bottom: 1rem;
+    font-family: "orbitron";
+    font-size: 0.9rem;
+    font-weight: 500;
+    
 }
 
 .contenedor .sidebar {
@@ -235,6 +281,8 @@ body::-webkit-scrollbar-thumb {
 h3 {
     padding-bottom: 0.8rem;
     font-family: 'Tw Cen MT Condensed';
+    padding-left:0.8rem ;
+    padding-right: 0.8rem;
 }
 
 .video2 {
@@ -255,20 +303,16 @@ h3 {
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
-    height: auto;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
-.transparente {
+.carrousel {
     display: grid;
     margin: 10px;
-    height: 70vh;
-    background-color: var(--color4);
-    opacity: 55%;
+    height: auto;
     padding: 10 px;
-    border-radius: 10px;
-    color: var(--color1);
     justify-content: center;
     align-items: center;
 
@@ -292,40 +336,150 @@ h3 {
     grid-area: section2;
     display: flex;
     background-color: var(--color3);
-    height: 60vh;
+    height: auto;
     color: #DBE0D1;
     padding: 1rem;
     overflow: auto;
+   
+ 
+    
 }
 
-#circulo1 {
-    background-image: url();
+
+.section2 .hover{
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    margin: 1.5rem;
+    box-shadow: 5px 5px 10px var(--color5); 
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+   @media (max-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    font-size:10px;}
+     
+   
 }
 
-.contenedor .section2 .circulo {
-    background-color: #DBE0D1;
-    color: #000000;
+
+
+
+.front{
+
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
     justify-content: center;
     align-content: center;
-    margin: 1.5rem;
+    
+    font-size: small;
 
-/* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
-@media (max-width: 768px) {
-    width: 3rem;
-    height: 3rem;
-    font-size:10px;
-    }     
+    box-sizing: border-box;
+   
+    padding: 5rem 1.3rem 0rem 1.7rem;
+    
+
+    color: rgb(0,0,0,0);
 }
+
+.peli {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.p1{
+    background-image: url(../img/Blade_Runner_\(1982_poster\)c.png);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p2{
+    background-image: url(../img/Total_Recall_\(1990\)_c.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p3{
+    background-image: url(../img/Minority_Report_Poster.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+
+.p4{
+    background-image: url(../img/scanner.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p5{
+    background-image: url(../img/radio_libre_albemutha\ .jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p6{
+    background-image: url(../img/blade_runner_2049.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.hover :hover {
+
+    background-color:var(--color6);
+    opacity: 80%;
+    color: var(--color1);
+    transform: scale(105%);
+    transition: all 0.3 ease;
+  
+}
+
+.section2>div:hover {
+    
+    transform: scale(108%);
+    
+}
+
+.section2>div:hover .front:not(:hover){
+    background-color:var(--color4);
+    opacity: 80%;
+    color: var(--color1);
+}
+
 
 .titulo {
     background-color: var(--color2);
     color: var(--color1);
     margin: 1.5rem;
     text-align: center;
-}
+    padding: 0.4rem;
+    box-sizing: border-box;
+    width:70%;
+    font-size:0.9rem;
+    margin-left: 3rem;
+    box-shadow: 5px 5px 10px var(--color5); 
+    
+  
+} 
 
 .contenedor .footer {
     display: grid;
@@ -340,6 +494,8 @@ h3 {
         }     
     
 }
+
+
 
 #icon {
     display: flex;
