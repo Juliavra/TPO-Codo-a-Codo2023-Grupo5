@@ -2,13 +2,19 @@
     box-sizing: border-box;
     margin: auto;
     padding: 0px;
+<<<<<<< HEAD
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+=======
+    
+    
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
 }
 
 :root {
     font-size: 20px;
+<<<<<<< HEAD
     --color1: #DBE0D1;
     --color2: #082323;
     --color3: #32333B;
@@ -21,6 +27,15 @@
 @font-face {
     font-family:"jmh-typewriter.regular";
     src: url(../fonts/jmh-typewriter.regular.ttf);
+=======
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
 
     font-family:"OverpassMono";
     src: url(../fonts/OverpassMono-VariableFont_wght.ttf);
@@ -37,8 +52,32 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: var(--color6);
     border-radius: 15px;
+<<<<<<< HEAD
+=======
+
 }
 
+
+:root {
+    --color1: #DBE0D1;
+    --color2: #082323;
+    --color3: #32333B;
+    --color4: #32323A;
+    --color5: #00140D;
+    --color6: #D38D00;
+    --paraquesevea: black;
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
+}
+
+@font-face {
+    font-family:"jmh-typewriter.regular";
+    src: url(../fonts/jmh-typewriter.regular.ttf);
+
+    font-family:"OverpassMono";
+    src: url(../fonts/OverpassMono-VariableFont_wght.ttf);
+
+
+}
 .contenedor {
     /*max-width: 120rem;*/
     display: grid;
@@ -93,6 +132,19 @@ body::-webkit-scrollbar-thumb {
     transform: rotate3d(0, 0, 1, 6.142rad);    
 }
 
+.links:hover{
+    box-shadow:5px 5px 10px var(--color5);
+    transform:scale(110%);
+    border-radius: 10px;
+    transform: rotate3d(0, 0, 1, 6.142rad);
+  
+   
+   
+
+    
+    
+}
+
 #links>a {
     font-family: 'Tw Cen MT Condensed';
     text-decoration: none;
@@ -123,6 +175,7 @@ body::-webkit-scrollbar-thumb {
 .ImgLibro { 
     width: 310px;
     height:300px;
+    
     /*width="330vw" height="350vh"*/
     }
 
@@ -134,10 +187,27 @@ body::-webkit-scrollbar-thumb {
     margin: 3rem;
     box-shadow: 5px 5px 10px var(--color5); 
     border-radius: 5px;
+<<<<<<< HEAD
 }
 
 #libro:hover img:not(:hover){
     transform: scale(130%);
+}
+
+#libro>a :hover{
+transform: scale(130%);
+=======
+    /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+    @media (max-width: 425px) {         
+        font-size: 70%;
+        margin: 1rem;
+        }
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
+}
+
+#libro:hover img:not(:hover){
+    transform: scale(130%);
+
 }
 
 #libro>a :hover{
@@ -165,6 +235,7 @@ transform: scale(130%);
 
 .info>div {
     margin-top: 0.5rem;
+
 }
 
 .info .copete {
@@ -172,7 +243,12 @@ transform: scale(130%);
     margin-bottom: 1rem;
     font-family: "orbitron";
     font-size: 0.9rem;
+<<<<<<< HEAD
     font-weight: 500;  
+=======
+    font-weight: 500;
+    
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
 }
 
 .contenedor .sidebar {
@@ -262,8 +338,15 @@ h3 {
     color: #DBE0D1;
     padding: 1rem;
     overflow: auto;
+   
+ 
+    
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
 .section2 .hover{
     overflow: hidden;
     justify-items: center;
@@ -273,8 +356,23 @@ h3 {
     height: 15rem;
     margin: 1.5rem;
     box-shadow: 5px 5px 10px var(--color5); 
+<<<<<<< HEAD
 }
 
+=======
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+   @media (max-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    font-size:10px;}
+     
+   
+}
+
+
+
+
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
 .front{
 
     border-radius: 50%;
@@ -291,6 +389,7 @@ h3 {
     
 
     color: rgb(0,0,0,0);
+<<<<<<< HEAD
 }
 
 .peli {
@@ -359,7 +458,90 @@ h3 {
     background-color:var(--color4);
     opacity: 80%;
     color: var(--color1);
+=======
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
 }
+
+.peli {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.p1{
+    background-image: url(../img/Blade_Runner_\(1982_poster\)c.png);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p2{
+    background-image: url(../img/Total_Recall_\(1990\)_c.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p3{
+    background-image: url(../img/Minority_Report_Poster.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+
+.p4{
+    background-image: url(../img/scanner.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p5{
+    background-image: url(../img/radio_libre_albemutha\ .jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.p6{
+    background-image: url(../img/blade_runner_2049.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.hover :hover {
+
+    background-color:var(--color6);
+    opacity: 80%;
+    color: var(--color1);
+    transform: scale(105%);
+    transition: all 0.3 ease;
+  
+}
+
+.section2>div:hover {
+    
+    transform: scale(108%);
+    
+}
+
+.section2>div:hover .front:not(:hover){
+    background-color:var(--color4);
+    opacity: 80%;
+    color: var(--color1);
+}
+
 
 .titulo {
     background-color: var(--color2);
@@ -372,6 +554,11 @@ h3 {
     font-size:0.9rem;
     margin-left: 3rem;
     box-shadow: 5px 5px 10px var(--color5); 
+<<<<<<< HEAD
+=======
+    
+  
+>>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
 } 
 
 .contenedor .footer {
@@ -383,6 +570,8 @@ h3 {
     justify-content: center;
     padding: 1rem;    
 }
+
+
 
 #icon {
     display: flex;
