@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 * {
     box-sizing: border-box;
-=======
-
-*{
->>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
     margin: 0px;
     padding: 0px;
 }
@@ -186,7 +181,6 @@ span {
             #06ffea 3px 0px;
     }
 
-<<<<<<< HEAD
     10% {
         text-shadow: #b4cf06 2px 0px,
             #0d22da -2px 0px;
@@ -250,47 +244,11 @@ span {
     100% {
         text-shadow: #b4cf06 0px 0px,
             #0d22da 0px 0px;
-=======
-    main{ 
-        
-        grid-area: main;
-        background-color:var(--color1);
-        box-sizing: border-box;
-        
-        
-     }
-        
-    .h2{
-        font-family: "orbitron";
-        font-size: larger;
-        font-weight: bold;
-        padding: 2rem;
-        box-sizing: border-box;
-
-    }
-    
-    span{
-        font-style: oblique;
-        
-    }
-
-    .fila{
-        display: flex; 
-        padding: 1rem;
-        box-sizing: border-box;
-      
-  
-        @media (max-width: 700px) { 
-            display:inline-block;
-           
-        }   
->>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
     }
 
 
 }
 
-<<<<<<< HEAD
 /*------------------------------------*/
 
 @media (max-width: 700px) {
@@ -299,30 +257,5 @@ span {
     }
     .texto {
         display: inline-block;
-=======
-    .foto{
-        
-        margin-left: 1.5rem;
-        box-sizing: border-box;
-        margin-top: 2rem;
-   
-   
-    
-    }
-
-    
-    .texto {  
-        padding: 2rem;
-        width: 100vw;
-     background-color: var(--color1);
-     font-family: "jmh-typewriter.regular";
-     font-size:large;
-     box-sizing: border-box;
-
-     @media (max-width: 700px) { 
-        display:inline-block;
-    
-     }  
->>>>>>> ec9dfe34bf469f690e5b3f09516d0f1a93de0384
     }
 }
