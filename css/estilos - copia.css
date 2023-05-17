@@ -66,7 +66,12 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     font-family: 'Tw Cen MT Condensed';
     padding-left: 5%;
-   
+    
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px */
+    @media (max-width: 768px) {
+        display: inline;
+        
+        }
 }
 
 .contenedor .nav {
@@ -83,7 +88,15 @@ body::-webkit-scrollbar-thumb {
 .nombre {
     font-size: 6rem;
     padding-left: 1.5rem;
-    
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px  */
+    @media (max-width: 768px) {
+    font-size: 4rem ;
+    }
+
+/* para dispositivos cuya anchura de pantalla sea inferior a 425px  */
+@media (max-width: 425px) {
+    font-size: 3rem ;
+    }    
 }
 
 .links:hover{
@@ -103,6 +116,15 @@ body::-webkit-scrollbar-thumb {
 #links {
     display: flex;
     height: fit-content;
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+@media (max-width: 768px) {
+    font-size: 1rem ;
+    display: inline
+    }    
+/* para dispositivos cuya anchura de pantalla sea inferior a 425px  */
+@media (max-width: 425px) {
+    font-size: 0.7rem ;
+    }        
 }
 
 .contenedor .main {
@@ -113,17 +135,35 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem;
     padding-top: 3rem;
     justify-content: end;
+    @media (max-width: 425px) { 
+        padding: 0.5em;
+        font-size: 90%;
+        }    
 }
 
 #libro {
     margin: 0.7rem 1rem 0.7rem 1rem;
     justify-content: center;
+    @media (max-width: 425px) { 
+        margin: 0.1rem 0.3rem 0.1rem 0.3rem;
+        } 
 }
 
 .ImgLibro { 
     width: 310px;
     height:300px;
+    
     /*width="330vw" height="350vh"*/
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px*/
+    @media (max-width: 768px) { 
+        width:217px;
+        height:210px;
+        }    
+    /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+    @media (max-width: 425px) { 
+        width:155px;
+        height: 150px;
+        } 
     }
 
 #libro>div {
@@ -134,10 +174,16 @@ body::-webkit-scrollbar-thumb {
     margin: 3rem;
     box-shadow: 5px 5px 10px var(--color5); 
     border-radius: 5px;
+    /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+    @media (max-width: 425px) {         
+        font-size: 70%;
+        margin: 1rem;
+        }
 }
 
 #libro:hover img:not(:hover){
     transform: scale(130%);
+
 }
 
 #libro>a :hover{
@@ -161,10 +207,16 @@ transform: scale(130%);
     border-radius: 1rem;
     box-shadow: 5px 5px 10px var(--color5); 
     overflow: auto;
+
+    @media (max-width: 425px) { 
+        font-size: 70%;
+        }    
 }
 
 .info>div {
+
     margin-top: 0.5rem;
+
 }
 
 .info .copete {
@@ -172,7 +224,8 @@ transform: scale(130%);
     margin-bottom: 1rem;
     font-family: "orbitron";
     font-size: 0.9rem;
-    font-weight: 500;  
+    font-weight: 500;
+    
 }
 
 .contenedor .sidebar {
@@ -180,6 +233,10 @@ transform: scale(130%);
     background-color: var(--color1);
     border-radius: 1rem;
     margin: 0.8rem;
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px lel sidebar estará oculto */
+@media (max-width: 768px) {
+    display:none;
+    }    
 }
 
 .yt1 {
@@ -252,6 +309,7 @@ h3 {
 .section2::-webkit-scrollbar-thumb {
     background-color: var(--color6);
     border-radius: 10px;
+
 }
 
 .contenedor .section2 {
@@ -273,6 +331,11 @@ h3 {
     height: 15rem;
     margin: 1.5rem;
     box-shadow: 5px 5px 10px var(--color5); 
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+   @media (max-width: 768px) {
+    width: 3rem;
+    height: 3rem;
+    font-size:10px;}
 }
 
 .front{
@@ -306,6 +369,7 @@ h3 {
     background-repeat: none;
     background-position: center;
     background-size: contain;
+
 }
 
 .p2{
@@ -313,6 +377,7 @@ h3 {
     background-repeat: none;
     background-position: center;
     background-size: contain;
+
 }
 
 .p3{
@@ -320,6 +385,7 @@ h3 {
     background-repeat: none;
     background-position: center;
     background-size: contain;
+
 }
 
 .p4{
@@ -327,6 +393,7 @@ h3 {
     background-repeat: none;
     background-position: center;
     background-size: contain;
+
 }
 
 .p5{
@@ -334,6 +401,7 @@ h3 {
     background-repeat: none;
     background-position: center;
     background-size: contain;
+
 }
 
 .p6{
@@ -381,7 +449,11 @@ h3 {
     height: 20vh;
     color: var(--color1);
     justify-content: center;
-    padding: 1rem;    
+    padding: 1rem;
+    @media (max-width: 768px) {
+        font-size:15px;
+        }     
+    
 }
 
 #icon {
@@ -564,68 +636,9 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-/*
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-*/
+
 
 /*------------------------------*/
-
-    /* para dispositivos cuya anchura de pantalla sea inferior a 768px */
-    @media (max-width: 768px) {
-        .contenedor .header {
-            display: inline;
-        }
-        .nombre {
-            font-size: 4rem;
-        }
-        #links {
-            font-size: 1rem;
-            display: inline
-        }
-        .ImgLibro {
-            width: 217px;
-            height: 210px;
-        }
-        .contenedor .sidebar {
-            display: none;
-        }
-        .section2 .hover {
-            width: 3rem;
-            height: 3rem;
-            font-size: 10px;
-        }
-        .contenedor .footer {
-            font-size: 15px;
-        }
-    }
-
-
-    /* para dispositivos cuya anchura de pantalla sea inferior a 425px  */
-    @media (max-width: 425px) {
-        .nombre {
-            font-size: 3rem;
-        }
-        #links {
-            font-size: 0.7rem;
-        }
-        .contenedor .main {
-            padding: 0.5em;
-            font-size: 90%;
-        }
-        #libro {
-            margin: 0.1rem 0.3rem 0.1rem 0.3rem;
-        }
-        .ImgLibro {
-            width: 155px;
-            height: 150px;
-        }
-        #libro>div {
-            font-size: 70%;
-            margin: 1rem;
-        }
-        .info {
-            font-size: 70%;
-        }
-    }
