@@ -1,9 +1,13 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
+     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
+    text-align: justify ;
+    
 }
-
+h2{
+    font-size: 1rem;
+}
 :root {
     font-size: 20px;
     --color1: #DBE0D1;
@@ -12,7 +16,7 @@
     --color4: #32323A;
     --color5: #00140D;
     --color6: #D38D00;
-    --paraquesevea: black;
+
 }
 
 @font-face {
@@ -40,8 +44,8 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5 fr;
-    grid-auto-rows: repeat(5, 1fr);
+    grid-template-rows: 0.5fr;
+    grid-auto-rows: repeat(6, 1fr);
     grid-template-areas:
         "header     header     header"
         "main       main       main"
@@ -62,6 +66,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     font-family: 'Tw Cen MT Condensed';
     padding-left: 5%;
+    
 }
 
 .contenedor .nav {
@@ -71,13 +76,15 @@ body::-webkit-scrollbar-thumb {
     color: var(--color1);
     justify-content: end;
     padding: 2% 15% 3% 5%;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border: red solid 3px;
+   
 }
 
 .nombre {
-    font-size: 6rem;
+    font-size: 5rem;
     padding-left: 1.5rem;
+   
 }
 
 .links:hover {
@@ -90,8 +97,8 @@ body::-webkit-scrollbar-thumb {
 #links>a {
     font-family: 'Tw Cen MT Condensed';
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    color: var(--color1)
+    padding: 0.55rem 1rem;
+    color: var(--color1);
 }
 
 #links {
@@ -102,7 +109,8 @@ body::-webkit-scrollbar-thumb {
 .main {
     grid-area: main;
     background-color: var(--color1);
-    box-sizing: border-box;
+    font-family:  "OverpassMono";
+   
 }
 
 .h2 {
@@ -121,24 +129,41 @@ span {
     display: flex;
     padding: 1rem;
     box-sizing: border-box;
-
+    font-size: 0.8rem;
+ 
     @media (max-width: 700px) {
         display: inline-block;
     }
 }
 
+#dick{ 
+    @media (max-width: 425px) {
+    height:60vh;
+    width:80vw;
+    margin: 0.5rem;
+
+ }
+
+}
 .foto {
-    margin-left: 1.5rem;
+ 
     box-sizing: border-box;
     margin-top: 2rem;
+
+    @media (max-width: 425px) {
+       height:70%;
+       width:70%;
+
+    }
 }
 
+
 .texto {
-    padding: 2rem;
-    width: 100vw;
+    padding: 0.5rem;
+    width: 80vw;
     background-color: var(--color1);
-    font-family: "jmh-typewriter.regular";
-    font-size: large;
+   
+    font-size: 0.8rem;
     box-sizing: border-box;
 
     @media (max-width: 700px) {
@@ -147,7 +172,7 @@ span {
     }
 }
 
-.footer {
+.contenedor .footer {
     display: grid;
     grid-area: footer;
     background-color: var(--color2);
@@ -155,6 +180,8 @@ span {
     color: var(--color1);
     justify-content: center;
     padding: 1rem;
+    font-family:'Tw Cen MT Condensed';
+    font-size: 1.5rem;
 }
 
 #icon {
@@ -162,6 +189,15 @@ span {
     justify-content: space-between;
 }
 
+#icon * img:hover {
+    box-shadow: 8px 5px 10px var(--color5);
+  
+    transform: rotate3d(0, 0, 1, 6.142rad);
+}
+#icon >a:hover{
+    transform: scale(120%);
+
+}
 .nombre:hover {
     font-size: 6rem;
     animation: glitch 3s infinite;
@@ -257,5 +293,9 @@ span {
     }
     .texto {
         display: inline-block;
+    }
+
+    .contenedor .header {
+        display: inline;
     }
 }
