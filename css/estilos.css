@@ -1,7 +1,4 @@
 * {
-    box-sizing: border-box;
-    margin: auto;
-    padding: 0px;
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
@@ -15,7 +12,6 @@
     --color4: #32323A;
     --color5: #00140D;
     --color6: #D38D00;
-    --paraquesevea: black;
 }
 
 @font-face {
@@ -43,7 +39,7 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5 fr;
+    grid-template-rows: 0.5fr;
     grid-auto-rows: repeat(5, 1fr);
     grid-template-areas:
         "header     header      header"
@@ -51,12 +47,12 @@ body::-webkit-scrollbar-thumb {
         "section1   section1   section1"
         "section2   section2   section2"
         "footer      footer     footer";
-    background-color: var(--color3);
 }
 
 .contenedor .header {
-    width: 100%;
     grid-area: header;
+
+    width: 100%;
     justify-content: space-between;
     display: grid;
     box-sizing: border-box;
@@ -66,8 +62,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     font-family: 'Tw Cen MT Condensed';
     padding-left: 5%;
-   
 }
+
 
 .contenedor .nav {
     display: flex;
@@ -76,13 +72,15 @@ body::-webkit-scrollbar-thumb {
     color: var(--color1);
     justify-content: end;
     padding: 2% 15% 3% 5%;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border: red solid 3px;
+   
 }
 
 .nombre {
-    font-size: 6rem;
+    font-size:5rem;
     padding-left: 1.5rem;
+    
     
 }
 
@@ -96,8 +94,8 @@ body::-webkit-scrollbar-thumb {
 #links>a {
     font-family: 'Tw Cen MT Condensed';
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    color: var(--color1)
+    padding: 0.55rem 1rem;
+    color: var(--color1);
 }
 
 #links {
@@ -106,24 +104,40 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contenedor .main {
-    display: flex;
     grid-area: main;
+
+    display: flex;
     background-color: var(--color3);
     height: auto;
     padding: 1rem;
-    padding-top: 3rem;
+    padding-top: 5vh;
     justify-content: end;
+    box-sizing: border-box;
+
+    @media (max-width: 425px) {
+        flex-direction:column;
+        width: auto;
+    
+    }
 }
 
 #libro {
     margin: 0.7rem 1rem 0.7rem 1rem;
     justify-content: center;
+
+  
 }
 
 .ImgLibro { 
     width: 310px;
     height:300px;
     /*width="330vw" height="350vh"*/
+
+    @media (max-width: 425px) {
+    
+        margin-left: 3rem;
+    
+    }
     }
 
 #libro>div {
@@ -137,11 +151,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 #libro:hover img:not(:hover){
-    transform: scale(130%);
+    transform: scale(120%);
 }
 
 #libro>a :hover{
-transform: scale(130%);
+transform: scale(120%);
 }
 
 .info {
@@ -154,7 +168,7 @@ transform: scale(130%);
     padding: 1.4rem;
 
     font-family:"OverpassMono";
-    font-size: 0.68rem;
+    font-size: calc(0.4rem + 0.4vw + 0.6vh);
     text-shadow: 1px 1px 3px black;
     
     text-align: justify;
@@ -171,22 +185,21 @@ transform: scale(130%);
     margin-top: 0.2rem;
     margin-bottom: 1rem;
     font-family: "orbitron";
-    font-size: 0.9rem;
+    font-size: calc(0.5rem + 0.9vw+ 0.8vh);
     font-weight: 500;  
 }
 
 .contenedor .sidebar {
     grid-area: sidebar;
     background-color: var(--color1);
-    border-radius: 1rem;
-    margin: 0.8rem;
+    
+    
 }
 
 .yt1 {
     margin: 0.2rem;
-    z-index: 10;
-    border-radius: 1rem;
-    opacity: none;
+    border-radius: 0.8rem;
+   
 }
 
 .video1 {
@@ -195,10 +208,9 @@ transform: scale(130%);
     align-items: center;
     justify-content: center;
     margin: 0.6rem 0.5rem;
-    border-radius: 1rem;
     height: 47%;
-    border-radius: 1rem;
     background-color: rgba(50, 51, 59, 0.25);
+    border-radius: 0.8rem;
 }
 
 h3 {
@@ -215,7 +227,7 @@ h3 {
     justify-content: center;
     margin: 0.6rem 0.5rem;
     background-color: rgba(50, 51, 59, 0.25);
-    border-radius: 1rem;
+    border-radius: 0.8rem;
     height: 47%;
 }
 
@@ -239,6 +251,7 @@ h3 {
     justify-content: center;
     align-items: center;
 
+   
 }
 
 .section2::-webkit-scrollbar {
@@ -299,6 +312,8 @@ h3 {
     height: 15rem;
     justify-content: center;
     align-content: center;
+    
+    
 }
 
 .p1{
@@ -349,10 +364,13 @@ h3 {
     color: var(--color1);
     transform: scale(105%);
     transition: all 0.3 ease;
+    background-color:var(--color4);
 }
+    
 
 .section2>div:hover {
     transform: scale(108%);
+    
 }
 
 .section2>div:hover .front:not(:hover){
@@ -369,7 +387,7 @@ h3 {
     padding: 0.4rem;
     box-sizing: border-box;
     width:70%;
-    font-size:0.9rem;
+    font-size: calc(0.7em + 1vh);
     margin-left: 3rem;
     box-shadow: 5px 5px 10px var(--color5); 
 } 
@@ -382,11 +400,23 @@ h3 {
     color: var(--color1);
     justify-content: center;
     padding: 1rem;    
+    font-family:'Tw Cen MT Condensed';
+    font-size: 1.5rem;
 }
 
 #icon {
     display: flex;
     justify-content: space-between;
+}
+
+#icon * img:hover {
+    box-shadow: 8px 5px 10px var(--color5);
+  
+    transform: rotate3d(0, 0, 1, 6.142rad);
+}
+#icon >a:hover{
+    transform: scale(120%);
+
 }
 
 .nombre:hover {
@@ -629,3 +659,12 @@ img {vertical-align: middle;}
             font-size: 70%;
         }
     }
+
+    
+.img {
+    @media (max-width: 425px) {
+        height:60%;
+        
+        }
+        
+}

@@ -2,12 +2,11 @@
 <html lang=“es”>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Philip K. Dick </title>   
     <link rel="STYLESHEET" href="css/estilos.css">
-    <title>Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
@@ -15,7 +14,8 @@
 
 </head>
 
-<body class="contenedor">
+<body >
+    <div class="contenedor">
     <header class="header">
         <div class="nombre"> Philip K. Dick </div>
         <nav class="nav">
@@ -50,20 +50,7 @@
 
 
     </main>
-    <sidebar class="sidebar">
     
-        <div class="video1"> 
-            <h3>Libros para empezar a leer a Philip K. Dick</h3>
-            <iframe class="yt1" src="https://www.youtube.com/embed/LS0AhMxl1e0?start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-        </div>
-        <div class="video2">
-            <h3>Podcast LABERINTO DE PAPEL</h3>
-            <iframe class="yt1" src="https://www.youtube.com/embed/ibJP7_Nakm4?start=96" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    
-    
-    </sidebar>
 
 
     <section class="section1">
@@ -72,19 +59,19 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
-                    <img src="img/gestarescala.jpg" style="width:100%" height="600">
+                    <img class="img" src="img/gestarescala.jpg" style="width:100%" height="600">
                     <div class="text"> </div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
-                    <img src="img/castillo.jpg" style="width:100%" height="600">
+                    <img class="img" src="img/castillo.jpg" style="width:100%" height="600">
                     <div class="text"></div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
-                    <img src="img/esperando el.jpg" style="width:100%" height="600">
+                    <img class="img" src="img/esperando el.jpg" style="width:100%" height="600">
                     <div class="text"> </div>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -218,13 +205,10 @@
     <footer class="footer">
         <div id="icon">
             <a href="https://es-la.facebook.com/" target="_blank" title="Ir a Facebook"><img src="img/face.png"
-                    alt="facebook" width="25" height="25"> </a>
-            <a href="https://instagram.com" target="_blank" title="Ir a Instagram"><img src="img/insta.png"
-                    alt="instagram" width="25" height="25"></a>
-            <a href="https://twitter.com/home?lang=es" target="_blank" title="Ir a Twitter"><img src="img/tw.png" width="25"
-                    alt="twitter" height="25"></a>
-            <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="img/youtube.png" alt="youtube" width="25"
-                    height="25"></a>
+            alt="facebook" width="30" height="30"> </a>
+            <a href="https://instagram.com" target="_blank" title="Ir a Instagram"><img src="img/insta.png" alt="instagram" width="30" height="30"></a>
+            <a href="https://twitter.com/home?lang=es" target="_blank" title="Ir a Twitter"><img src="img/tw.png" alt="twitter" width="30" height="30"></a>
+            <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="img/youtube.png" alt="youtube" width="30" height="30"></a>
         </div>
 
         <div>
@@ -233,6 +217,23 @@
     </footer>
     <script src="js/carousel.js"></script>
 </body>
+
+<sidebar class="sidebar">
+    
+    <div class="video1"> 
+        <h3>Libros para empezar a leer a Philip K. Dick</h3>
+        <iframe class="yt1" src="https://www.youtube.com/embed/LS0AhMxl1e0?start=13" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </div>
+    <div class="video2">
+        <h3>Podcast LABERINTO DE PAPEL</h3>
+        <iframe class="yt1" src="https://www.youtube.com/embed/ibJP7_Nakm4?start=96" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
+</sidebar>
+
+</div>
 
 </html>
 
