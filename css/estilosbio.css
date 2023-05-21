@@ -44,7 +44,6 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr;
     grid-auto-rows: repeat(6, 1fr);
     grid-template-areas:
         "header     header     header"
@@ -297,5 +296,6 @@ span {
 
     .contenedor .header {
         display: inline;
+        padding: 2% 5% 3% 5%;
     }
 }

@@ -44,7 +44,6 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr;
     grid-auto-rows: repeat(5, 1fr);
     grid-template-areas:
         "header     header      header"
