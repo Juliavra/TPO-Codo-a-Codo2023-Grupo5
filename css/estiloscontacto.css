@@ -41,7 +41,6 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr;
     grid-auto-rows: repeat(3, 1fr);
     grid-template-areas:
         "header     header      header"
@@ -340,6 +339,7 @@ color: red;
 @media (max-width: 768px) {
 .contenedor .header {
         display: inline;
+        padding: 2% 5% 3% 5%;
     }
     .nombre{
         font-size: 4rem;
@@ -369,7 +369,9 @@ color: red;
         padding: 0.5em;
         font-size: 90%;
 }
-
+#links>a{
+    padding: 0.55rem 0.5rem;
+}
 
 }
 

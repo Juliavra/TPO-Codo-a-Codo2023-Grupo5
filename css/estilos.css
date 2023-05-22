@@ -39,7 +39,6 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5fr;
     grid-auto-rows: repeat(5, 1fr);
     grid-template-areas:
         "header     header      header"
@@ -51,7 +50,7 @@ body::-webkit-scrollbar-thumb {
 
 .contenedor .header {
     grid-area: header;
-
+    grid-template-rows: 0.5fr;
     width: 100%;
     justify-content: space-between;
     display: grid;
@@ -606,6 +605,7 @@ img {vertical-align: middle;}
     @media (max-width: 768px) {
         .contenedor .header {
             display: inline;
+            padding: 2% 5% 3% 5%;
         }
         .nombre {
             font-size: 4rem;
@@ -622,10 +622,20 @@ img {vertical-align: middle;}
             display: none;
         }
         .section2 .hover {
-            width: 3rem;
-            height: 3rem;
-            font-size: 10px;
+            width: 12rem;
+            height: 12rem;
         }
+        .section2 .front {        
+            width: 12rem;
+            height: 12rem;
+            padding: 3.4rem 1.3rem 0rem 1.7rem;
+       }
+        .titulo{         
+          padding: 0.3rem;
+          width:70%;
+          font-size: calc(0.5em + 0.6vh);
+          margin-left: 2.5rem;
+           }
         .contenedor .footer {
             font-size: 15px;
         }
@@ -639,6 +649,9 @@ img {vertical-align: middle;}
         }
         #links {
             font-size: 0.7rem;
+        }
+        #links>a{
+            padding: 0.55rem 0.5rem;
         }
         .contenedor .main {
             padding: 0.5em;
