@@ -65,7 +65,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     font-family: 'Tw Cen MT Condensed';
     padding-left: 5%;
-    
+   
 }
 
 .contenedor .nav {
@@ -92,13 +92,14 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     transform: rotate3d(0, 0, 1, 6.142rad);
 }
-
+    
 #links>a {
     font-family: 'Tw Cen MT Condensed';
     text-decoration: none;
     padding: 0.55rem 1rem;
     color: var(--color1);
 }
+
 
 #links {
     display: flex;
@@ -133,25 +134,41 @@ span {
     @media (max-width: 700px) {
         display: inline-block;
     }
-}
 
-#dick{ 
+    
+    
+    #links{
+        display: flex;
+        height: fit-content;
+    /* para dispositivos cuya anchura de pantalla sea inferior a 768px la clase menu estará oculta */
+@media (max-width: 768px) {
+        font-size: 1rem ;
+        display: inline
+        }    
+/* para dispositivos cuya anchura de pantalla sea inferior a 425px  */
     @media (max-width: 425px) {
-    height:60vh;
-    width:80vw;
-    margin: 0.5rem;
+        font-size: 0.7rem ;
+        }
+    }
 
- }
-
-}
-.foto {
- 
-    box-sizing: border-box;
-    margin-top: 2rem;
-
-    @media (max-width: 425px) {
-       height:70%;
-       width:70%;
+    main{ 
+        box-sizing: border-box;
+        grid-area: main;
+        background-color:var(--color1);
+        
+     }
+        
+    .h2{
+        font-family: "orbitron";
+        font-size: larger;
+        font-weight: bold;
+        @media (max-width: 768px) { 
+            font-size:Medium;
+        }  
+                /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+        @media (max-width: 425px) { 
+            font-size:smaller;            
+        }    
 
     }
 }
@@ -187,6 +204,7 @@ span {
     display: flex;
     justify-content: space-between;
 }
+
 
 #icon * img:hover {
     box-shadow: 8px 5px 10px var(--color5);
@@ -225,11 +243,47 @@ span {
         text-shadow: #b4cf06 -1px 0px,
             #0d22da 1px 0px;
     }
+    .Imgbio2 { 
+
+        /* para dispositivos cuya anchura de pantalla sea inferior a 768px*/
+        @media (max-width: 768px) { 
+            width:263px;
+            height:264px;
+            
+        }    
+        /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+        @media (max-width: 425px) { 
+            width:130px;
+            height:132px;
+            }                  
+    }
+    .Imgbio1 { 
+        /* para dispositivos cuya anchura de pantalla sea inferior a 768px*/
+        @media (max-width: 768px) { 
+            width:126px;
+            height:204px;
+        /*    display:none*/
+        }    
+        /* para dispositivos cuya anchura de pantalla sea inferior a 425px*/
+        @media (max-width: 425px) { 
+            width:90px;
+            height:146px;
+            }                  
+    }   
+
+   .texto {  
+    padding: 2rem;
+    width: 100vw;
+    background-color: var(--color1);
+    font-family: "jmh-typewriter.regular";
+    font-size:large;
+       
 
     20% {
         text-shadow: #ff005d -3px 0px,
             #06ffea 3px 0px;
     }
+}
 
     25% {
         text-shadow: #b4cf06 2px 0px,
