@@ -72,15 +72,13 @@ body::-webkit-scrollbar-thumb {
     justify-content: end;
     padding: 2% 15% 3% 5%;
     font-size: 1.6rem;
-    border: red solid 3px;
-   
+  
 }
 
 .nombre {
     font-size:5rem;
     padding-left: 1.5rem;
-    
-    
+   
 }
 
 .links:hover{
@@ -112,12 +110,6 @@ body::-webkit-scrollbar-thumb {
     padding-top: 5vh;
     justify-content: end;
     box-sizing: border-box;
-
-    @media (max-width: 425px) {
-        flex-direction:column;
-        width: auto;
-    
-    }
 }
 
 #libro {
@@ -130,13 +122,6 @@ body::-webkit-scrollbar-thumb {
 .ImgLibro { 
     width: 310px;
     height:300px;
-    /*width="330vw" height="350vh"*/
-
-    @media (max-width: 425px) {
-    
-        margin-left: 3rem;
-    
-    }
     }
 
 #libro>div {
@@ -237,7 +222,7 @@ h3 {
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 75vh;
     justify-content: center;
     align-items: center;
 }
@@ -592,13 +577,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-/*
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-*/
-
 /*------------------------------*/
 
     /* para dispositivos cuya anchura de pantalla sea inferior a 768px */
@@ -656,6 +634,8 @@ img {vertical-align: middle;}
         .contenedor .main {
             padding: 0.5em;
             font-size: 90%;
+            flex-direction:column;
+            width: auto;
         }
         #libro {
             margin: 0.1rem 0.3rem 0.1rem 0.3rem;
@@ -663,6 +643,7 @@ img {vertical-align: middle;}
         .ImgLibro {
             width: 155px;
             height: 150px;
+            margin-left: 3rem;
         }
         #libro>div {
             font-size: 70%;
@@ -671,13 +652,16 @@ img {vertical-align: middle;}
         .info {
             font-size: 70%;
         }
+        .img {
+            height:60%;}
     }
 
-    
-.img {
-    @media (max-width: 425px) {
-        height:60%;
-        
-        }
-        
-}
+    /*@media (max-width: 768px){}*/
+
+
+
+
+
+
+
+ 
