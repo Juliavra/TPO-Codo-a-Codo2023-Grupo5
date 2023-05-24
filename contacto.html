@@ -2,115 +2,106 @@
 <html lang=“es”>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="" X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/estilos.css">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  <meta charset="utf-8" />
+  <meta http-equiv="" X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/estiloscontacto.css">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <link rel="icon" href="img/3.ico" type="image/x-icon">
+  <link rel="icon" href="img/3.ico" type="image/x-icon">
 </head>
 
 <body class="contenedor">
   <header class="header">
-        <div class="nombre"> CONTACTO </div>
-        <nav class="nav">
-            <div id="links">
-                <a class="links" href="index.html"> Home</a>
-                <a class="links" href="bio.html"> Bio</a>
-                <a class="links" href="obras.html"> Obras</a>
-                <a class="links" href="contacto.html"> Contacto</a>
-            </div>
-        </nav>
-    </header>
+    <div class="nombre"> Contacto </div>
+    <nav class="nav">
+      <div id="links">
+        <a class="links" href="index.html"> Home</a>
+        <a class="links" href="bio.html"> Bio</a>
+        <a class="links" href="obras.html"> Obras</a>
+        <a class="links" href="contacto.html"> Contacto</a>
+      </div>
+    </nav>
+  </header>
 
-    <main class="main">
-        <div class="container">
-            <form action="main.js" class="form" id="formulario">
-            <!-- /** ! user name Input **/ -->
-            <div>
-              <i class="fas fa-user"></i>
-              <label for="nombre">Nombre</label>
-            </div>
-            <div>
-              <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" >
-              <i class="fas fa-exclamation-circle failure-icon"></i>
-              <i class="far fa-check-circle success-icon"></i>
-              <div class="error"></div>
-            </div>
-            <!-- /** ! Email Input **/ -->
-            <div>
-              <i class="far fa-envelope"></i>
-              <label for="email">Email</label>
-            </div>
-            <div>
-            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" />
-              <i class="fas fa-exclamation-circle failure-icon"></i>
-              <i class="far fa-check-circle success-icon"></i>
-              <div class="error"></div>
-            </div>
-      
-            <!-- /** ! Asunto Input **/ -->
-            <div>
-              <label for="asunto">Asunto</label>
-            </div>
-            <div>
-              <input type="text" name="asunto" id="asunto" placeholder="" />
-              <i class="fas fa-exclamation-circle failure-icon"></i>
-              <i class="far fa-check-circle success-icon"></i>
-              <div class="error"></div>
-            </div>
-      
-            <!-- /** ! Comentario Input **/ -->
-            <div>
-              <label for="comentario">Comentario</label>
-              </div>
-              <div>
-              <textarea name="comentario" id="comentario" cols="21  " rows="8" maxlength="300"
-                style="resize: none"></textarea>
-                <i class="fas fa-exclamation-circle failure-icon"></i>
-                <i class="far fa-check-circle success-icon"></i>
-                <div class="error"></div>
-            </div>
-      
-            <div>
-              <input type="checkbox" name="terminos" id="terminos">
-              Acepto los Términos y Condiciones
-              <div class="error"></div>
-           
-              <input class="formulario__checkbox" type="checkbox" name="spam" id="spam">
-              Deseo recibir Spam
-              <div class="error"></div>
-            </div>
-      
-            <!-- /** ! Boton Enviar**/ -->
-            <div>
-              <button type="submit" id="submit" class="_btn">Enviar</button>
-            </div>
-          </form>
-
+  <main class="main">
+    <div class="container_contacto">
+      <form action="main.js" class="form" id="formulario">
+        <!-- /** ! user name Input **/ -->
+        <div id="div_nombre_label">
+          <i class="fas fa-user"></i>
+          <label for="nombre">Nombre</label>
         </div>
+        <div id="div_nombre_input">
+          <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+          <i id="failure_nombre" class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- /** ! Email Input **/ -->
+        <div id="div_email_label">
+          <i class="far fa-envelope"></i>
+          <label for="email">Email</label>
+        </div>
+        <div id="div_email_input">
+          <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com" />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- /** ! Asunto Input **/ -->
+        <div id="div_asunto_label">
+          <label for="asunto">Asunto</label>
+        </div>
+        <div id="div_asunto_input">
+          <input type="text" name="asunto" id="asunto" placeholder="" />
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <!-- /** ! Comentario Input **/ -->
+        <div id="div_comentario_label">
+          <label for="comentario">Comentario</label>
+        </div>
+        <div id="div_comentario_input">
+          <textarea name="comentario" id="comentario" cols="21  " rows="8" maxlength="300"
+            style="resize: none"></textarea>
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          <div class="error"></div>
+        </div>
+        <div id="div_terminos_spam">
+          <input type="checkbox" name="terminos" id="terminos">
+          Acepto los Términos y Condiciones
+          <div class="error"></div>
 
+          <input class="formulario__checkbox" type="checkbox" name="spam" id="spam">
+          Deseo recibir Spam
+          <div class="error"></div>
+        </div>
+        <!-- /** ! Boton Enviar**/ -->
+        <div id="boton_enviar">
+          <button id="btn_enviar" type="submit" id="submit" class="_btn">Enviar</button>
+        </div>
+      </form>
+    </div>
 
-         <script src="js/main.js"></script>
-    </main>
-    <footer class="footer">
-      <div id="icon">
-          <a href="https://es-la.facebook.com/" target="_blank" title="Ir a Facebook"><img src="img/face.png"
-                  alt="facebook" width="25" height="25"> </a>
-          <a href="https://instagram.com" target="_blank" title="Ir a Instagram"><img src="img/insta.png"
-                  alt="instagram" width="25" height="25"></a>
-          <a href="https://twitter.com/home?lang=es" target="_blank" title="Ir a Twitter"><img src="" width="25"
-                  alt="twitter" height="25"></a>
-          <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="" alt="youtube" width="25"
-                  height="25"></a>
-      </div>
-
-      <div>
-          <p>Derechos reservados Grupo5 Codo_a_Codo</p>
-      </div>
+    <script src="js/contacto.js"></script>
+  </main>
+  <footer class="footer">
+    <div id="icon">
+      <a href="https://es-la.facebook.com/" target="_blank" title="Ir a Facebook"><img src="img/face.png"
+      alt="facebook" width="30" height="30"> </a>
+      <a href="https://instagram.com" target="_blank" title="Ir a Instagram"><img src="img/insta.png" alt="instagram" width="30" height="30"></a>
+      <a href="https://twitter.com/home?lang=es" target="_blank" title="Ir a Twitter"><img src="img/tw.png" alt="twitter" width="30" height="30"></a>
+      <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="img/youtube.png" alt="youtube" width="30" height="30"></a>
+  </div>
+    <div>
+      <p>Derechos reservados Grupo5 Codo_a_Codo</p>
+    </div>
   </footer>
+  
 </body>
-
 </html>

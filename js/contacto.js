@@ -49,22 +49,22 @@ function validateForm() {
   let asunto_trim = asunto.value.trim();
   let comentario_trim = comentario.value.trim();
   let mensaje = "Error inicial";
-  /*
+
+/*
   const queryAllSuccess = document.querySelectorAll(".success-icon");
   const queryAllFailure = document.querySelectorAll(".failure-icon");
-  // CON ESTO SE PUEDE APAGAR ENCENDER POR GRUPOS????
+  //CON ESTO SE PUEDE APAGAR ENCENDER POR GRUPOS????
   queryAllSuccess[0].style.opacity = "0";
   queryAllFailure[0].style.opacity = "0";
-*/
+  */
 
-  failureIcon[0].style.opacity = 0;
-  successIcon[0].style.opacity = 0;
+  errorMsg[0].innerHTML = "";
+  errorMsg[1].innerHTML = "";
+  errorMsg[2].innerHTML = "";
+  errorMsg[3].innerHTML = "";
+  errorMsg[4].innerHTML = "";
+  errorMsg[5].innerHTML = "";
 
-
-
-
-
-  
   if (nombre_trim != "") {
     if (nombre_trim.length >= 3) {
       failureIcon[0].style.opacity = "0";
@@ -93,24 +93,24 @@ function validateForm() {
                     mensaje = "todoOk";
                   }
                   else {/* "spam NO PUEDE SER NULO";*/
-                    mensaje = "SPAM NO PUEDE SER NULO";
+                    mensaje = "Spam no puede ser nulo";
                     errorMsg[5].innerHTML = mensaje;
                   }
                 }
                 else {/* "terminos NO PUEDE SER NULO";*/
-                  mensaje = "TÉRMINOS NO PUEDE SER NULO";
+                  mensaje = "Términos no puede ser nulo";
                   errorMsg[4].innerHTML = mensaje;
                 }
               }
               else {
-                mensaje = "COMENTARIO NO PUEDE SER NULO";
+                mensaje = "Comentario no puede ser nulo";
                 errorMsg[3].innerHTML = mensaje;
                 failureIcon[3].style.opacity = "1";
                 successIcon[3].style.opacity = "0";
               }
             }
             else {/* "asunto NO PUEDE SER NULO";*/
-              mensaje = "ASUNTO NO PUEDE SER NULO";
+              mensaje = "Asunto no puede ser nulo";
               errorMsg[2].innerHTML = mensaje;
               failureIcon[2].style.opacity = "1";
               successIcon[2].style.opacity = "0";
@@ -124,55 +124,48 @@ function validateForm() {
           }
         }
         else {/* "Email DEBE CONTENER @";*/
-          mensaje = "Email DEBE CONTENER @";
+          mensaje = "Email debe contener @";
           errorMsg[1].innerHTML = mensaje;
           failureIcon[1].style.opacity = "1";
           successIcon[1].style.opacity = "0";
         }
       }
       else {/*"Email NO PUEDE SER NULO";*/
-        mensaje = "Email NO PUEDE SER NULO";
+        mensaje = "Email no puede ser nulo";
         errorMsg[1].innerHTML = mensaje;
         failureIcon[1].style.opacity = "1";
         successIcon[1].style.opacity = "0";
       }
     }
     else {/* "Nombre menor que tres";*/
-      mensaje = "Nombre menor que tres";
+      mensaje = "Nombre es menor que tres";
       errorMsg[0].innerHTML = mensaje;
       failureIcon[0].style.opacity = "1";
       successIcon[0].style.opacity = "0";
     }
   }
   else {/* "nombre NO PUEDE SER NULO "*/
-    mensaje = "NOMBRE NO PUEDE SER NULO ";
+    mensaje = "Nombre no puede ser nulo ";
     errorMsg[0].innerHTML = mensaje;
     failureIcon[0].style.opacity = "1";
     successIcon[0].style.opacity = "0";
 
   }
-  /* alert(mensaje);*/
-  if (mensaje == "todoOk") {
-    
 
+  if (mensaje == "todoOk") {
     let form = document.createElement('form');
     form.action = 'https://formspree.io/f/mvondkre';
     form.method = 'POST';
-    
     let nombre_inner = `<input name = "nombre" value=${nombre_trim}>`;
     let email_inner = `<input name = "email" value=${email_trim}>`;
     let asunto_inner = `<input name = "asunto" value=${asunto_trim}>`;
     let comentario_inner = `<input name = "comentario" value=${comentario_trim}>`;
     let terminos_inner = `<input name = "terminos" value=${terminos.value}>`;
     let spam_inner = `<input name = "spam" value=${spam.value}>`;
-
-
-    var test_cadena =nombre_inner+ " "+ email_inner+" "+asunto_inner+" "+comentario_inner+" "+terminos_inner+" "+spam_inner; 
-
+    var test_cadena = nombre_inner + " " + email_inner + " " + asunto_inner + " " + comentario_inner + " " + terminos_inner + " " + spam_inner;
     form.innerHTML = test_cadena;
-
-   document.body.append(form);
+    document.body.append(form);
     form.submit();
-    alert(`${mensaje} + "Mensaje Enviado"`);
+    /*alert(`${mensaje} + "Mensaje Enviado"`);*/
   }
 }
