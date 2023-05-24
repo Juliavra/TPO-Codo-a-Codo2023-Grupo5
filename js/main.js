@@ -173,6 +173,6 @@ function validateForm() {
 
    document.body.append(form);
     form.submit();
-    alert(`${mensaje} + "Mensaje Enviado"`);
+    //alert(`${mensaje} + "Mensaje Enviado"`);
   }
 }
