@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
-    margin: auto;
+
+    margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
 }
@@ -13,7 +13,7 @@
     --color4: #32323A;
     --color5: #00140D;
     --color6: #D38D00;
-    --paraquesevea: black;
+
 }
 
 @font-face {
@@ -41,10 +41,11 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5 fr;
     grid-auto-rows: repeat(3, 1fr);
     grid-template-areas:
         "header     header      header"
+        "main       main       main"
+        "main       main       main"
         "main       main       main"
         "footer      footer     footer";
     background-color: var(--color3);
@@ -52,24 +53,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contenedor .header {
+    grid-area: header;
+
     width: 100%;
     justify-content: space-between;
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: 50% 50%;
-    grid-area: header;
     background-color: var(--color2);
     color: var(--color1);
     align-items: center;
     font-family: 'Tw Cen MT Condensed';
-    padding-left: 0%;
-    box-sizing: border-box;
-    margin: 0px;
+    padding-left: 5%;
+
 }
 
 .nombre {
-    font-size: 6rem;
+    font-size: 5rem;
     padding-left: 1.5rem;
-    text-align: left;
+
 }
 
 .contenedor .nav {
@@ -79,8 +81,8 @@ body::-webkit-scrollbar-thumb {
     color: var(--color1);
     justify-content: end;
     padding: 2% 15% 3% 5%;
-    font-size: 1.8rem;
-    border: red solid 3px;
+    font-size: 1.6rem;
+
 }
 
 .links:hover {
@@ -93,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 #links>a {
     font-family: 'Tw Cen MT Condensed';
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1rem;
     color: var(--color1)
 }
 
@@ -110,6 +112,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem;
     padding-top: 3rem;
     justify-content: end;
+    box-sizing: border-box;
 }
 
 h3 {
@@ -119,25 +122,7 @@ h3 {
     padding-right: 0.8rem;
 }
 
-.front {
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
-    justify-content: center;
-    align-content: center;
-    font-size: small;
-    box-sizing: border-box;
-    padding: 5rem 1.3rem 0rem 1.7rem;
-    color: rgb(0, 0, 0, 0);
-}
 
-.hover :hover {
-    background-color: var(--color6);
-    opacity: 80%;
-    color: var(--color1);
-    transform: scale(105%);
-    transition: all 0.3 ease;
-}
 
 .contenedor .footer {
     display: grid;
@@ -147,13 +132,25 @@ h3 {
     color: var(--color1);
     justify-content: center;
     padding: 1rem;
-    width: 99vw;
+    font-family: 'Tw Cen MT Condensed';
+    font-size: 1.5rem;
 }
 
 #icon {
     display: flex;
     justify-content: space-between;
-    margin-left: 0px;
+
+}
+
+#icon * img:hover {
+    box-shadow: 8px 5px 10px var(--color5);
+
+    transform: rotate3d(0, 0, 1, 6.142rad);
+}
+
+#icon>a:hover {
+    transform: scale(120%);
+
 }
 
 .nombre:hover {
@@ -248,15 +245,16 @@ h3 {
 #div_asunto_label,
 #div_comentario_label,
 .main .container_contacto #formulario {
-    font-size: 1.5rem;
-    font-family: "jmh-typewriter.regular";
+    font-size: 1.8rem;
+    font-family: 'Tw Cen MT Condensed';
     color: white;
     margin-left: 0px;
+    margin-right: 480px;
 }
 
-#div_terminos_spam{
-    font-size: 1rem;
-    font-family: "jmh-typewriter.regular";
+#div_terminos_spam {
+    font-size: 1.6rem;
+    font-family: 'Tw Cen MT Condensed';
     color: white;
     margin-left: 0px;
 }
@@ -266,14 +264,14 @@ h3 {
 #div_asunto_input,
 #div_comentario_input {
     font-size: 1.5rem;
-    font-family: "jmh-typewriter.regular";
+    font-family: 'Tw Cen MT Condensed';
     color: white;
     margin-left: 0px;
     margin-bottom: 5px;
 }
 
 ._btn {
-    font-family: "jmh-typewriter.regular";
+    font-family: 'Tw Cen MT Condensed';
     font-size: 1.4rem;
     color: white;
     background-color: var(--color3);
@@ -299,52 +297,52 @@ h3 {
 }
 
 #formulario #div_nombre_input i {
-    opacity:0;
+    opacity: 0;
 }
 
 #formulario #div_email_input i {
-    opacity:0;
+    opacity: 0;
 }
 
 #formulario #div_asunto_input i {
-    opacity:0;
+    opacity: 0;
 }
 
 #formulario #div_comentario_input i {
-    opacity:0;
+    opacity: 0;
 }
 
-.error{
-font-size: 1rem;
-color: red;
-}
-
-.failure-icon{
+.error {
+    font-size: 1rem;
     color: red;
 }
 
-.success-icon{
+.failure-icon {
+    color: red;
+}
+
+.success-icon {
     color: green;
 }
 
 #face,
 #insta,
 #twitter,
-#youtube{
+#youtube {
     margin-left: 0px;
     margin-right: 60px;
 }
+
 /* FORM CONTACTO*/
 /*------------------------------*/
 
-
-
-
 @media (max-width: 768px) {
-.contenedor .header {
+    .contenedor .header {
         display: inline;
+        padding: 2% 5% 3% 5%;
     }
-    .nombre{
+
+    .nombre {
         font-size: 4rem;
     }
 
@@ -352,27 +350,28 @@ color: red;
         font-size: 1rem;
         display: inline
     }
+
     .contenedor .footer {
         font-size: 15px;
-        }
-
-
+    }
 }
 
-
-
 @media (max-width: 425px) {
-.nombre {    
+    .nombre {
         font-size: 3rem;
     }
-    #links{
+
+    #links {
         font-size: 0.7rem;
     }
+
     .contenedor .main {
         padding: 0.5em;
         font-size: 90%;
+    }
+
+    #links>a {
+        padding: 0.55rem 0.5rem;
+    }
+
 }
-
-
-}
-

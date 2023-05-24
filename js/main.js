@@ -11,6 +11,24 @@ let mensaje = "Error inicial",
   successIcon = classes("success-icon"),
   failureIcon = classes("failure-icon");
 
+
+    //AGREGA SONIDO AL HEADERA AL HOVER
+  document.getElementById("myAudio").load();
+  header=document.getElementById("header");                           
+  header.addEventListener ("mouseenter",header_audio_plays);
+  header.addEventListener("mouseleave", header_audio_pauses)
+  
+  function header_audio_plays(){
+     document.getElementById("myAudio").play();
+  }
+  
+  function header_audio_pauses(){
+    document.getElementById("myAudio").pause();
+  }
+  /*-------------------------------------------------*/
+
+
+
 /*---una manera de enviar el formulario------*/
 /*
 document.getElementById("submit").onclick = function () {
@@ -173,6 +191,6 @@ function validateForm() {
 
    document.body.append(form);
     form.submit();
-    alert(`${mensaje} + "Mensaje Enviado"`);
+    //alert(`${mensaje} + "Mensaje Enviado"`);
   }
 }

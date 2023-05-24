@@ -32,7 +32,7 @@
             <!--<h2 class="h2">Biografía</h2>-->
 
             <div>
-                <img src="img/Philip-K-Dick.jpg" alt="Philip-K-Dick">
+                <img src="img/Philip-K-Dick.jpg" alt="Philip-K-Dick" class="Imgbio1">
             </div>
 
             <div class="texto" class="end">
@@ -71,22 +71,27 @@
                 Durante el tiempo que pasó en Berkeley, Dick trabó amistad con el poeta Robert Duncan y, según él afirmaba, fue presentador de un programa de música clásica de la emisora de radio KSMO en 1947. Desde 1948 hasta 1952 fue vendedor de discos,9​ su único trabajo antes de publicar su primera historia corta en 1952. A partir de entonces, se dedicó a la escritura a tiempo casi completo, publicando su primera novela en 1955.
                 Los años 50 fueron una época difícil para Dick, tanto que, como una vez dijo, "ni siquiera podíamos pagar las sanciones por atraso de la biblioteca". Se relacionó con la contracultura anterior a los 60 de California y simpatizaba con los poetas beat y las ideas de izquierda.
                 Dick se opuso a la guerra de Vietnam, por lo que el FBI le abrió expediente. De hecho, en 1955, Dick y su por entonces esposa, Kleo Apostolides, habían recibido una visita del FBI. La pareja creía que esto era el resultado de las ideas socialistas y actividades izquierdistas de Kleo. 
-                El reconocimiento de la crítica le llegó a Philip K. Dick en 1963, cuando ganó el Premio Hugo por su novela El hombre en el castillo.​ Aunque Dick fue entonces aclamado como un genio en el mundo de la ciencia ficción, siguió siendo un desconocido para el resto del mundo literario, por lo que sólo pudo publicar sus libros en editoriales especializadas que pagaban poco. En consecuencia, aunque publicó novelas regularmente durante los siguientes años, siguió teniendo dificultades económicas casi hasta el final de sus días
-                En 1972, Dick donó sus manuscritos y papeles a la Special Collections Library en la Universidad del Estado de California en Fullerton, donde fueron archivados en la Colección de Ciencia ficción Philip K. Dick en la Biblioteca Pollak
-                La última novela dickiana publicada en vida del autor fue La transmigración de Timothy Archer.                
+                
             </div>
+
+          
               
-            <div> 
+            <div id="dick"> 
               
-              <img src="img/PKD-Azul1.png" alt="Philip-K-Dick">   
+              <img id="dick" src="img/PKD-Azul1.png" alt="Philip-K-Dick" class="Imgbio2">   
 
             </div>
         </div>
 
+        <div class="fila">El reconocimiento de la crítica le llegó a Philip K. Dick en 1963, cuando ganó el Premio Hugo por su novela El hombre en el castillo.​ Aunque Dick fue entonces aclamado como un genio en el mundo de la ciencia ficción, siguió siendo un desconocido para el resto del mundo literario, por lo que sólo pudo publicar sus libros en editoriales especializadas que pagaban poco. En consecuencia, aunque publicó novelas regularmente durante los siguientes años, siguió teniendo dificultades económicas casi hasta el final de sus días
+            En 1972, Dick donó sus manuscritos y papeles a la Special Collections Library en la Universidad del Estado de California en Fullerton, donde fueron archivados en la Colección de Ciencia ficción Philip K. Dick en la Biblioteca Pollak
+            La última novela dickiana publicada en vida del autor fue La transmigración de Timothy Archer.               
+         </div>
+
         <div class="fila">
             <div  >
             <h2 class="h2">Sus visiones y problemas psicologicos</h2>
-            <img class="foto" src="img/future.jpg" alt="Philip K. Dick" width="80%" height="60%" >
+            <img class="foto" src="img/future.jpg" alt="Philip K. Dick" width="350vw" height="400vh" >
             </div>
             <div class="texto"> 
              
@@ -118,18 +123,57 @@
  <footer class="footer">
     <div id="icon">
         <a href="https://es-la.facebook.com/" target="_blank" title="Ir a Facebook"><img src="img/face.png"
-                alt="facebook" width="25" height="25"> </a>
-        <a href="https://instagram.com" target="_blank" title="Ir a Instagram"><img src="img/insta.png"
-                alt="instagram" width="25" height="25"></a>
-        <a href="https://twitter.com/home?lang=es" target="_blank" title="Ir a Twitter"><img src="img/tw.png" width="25"
-                alt="twitter" height="25"></a>
-        <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="img/youtube.png" alt="youtube" width="25"
-                height="25"></a>
+        alt="facebook" width="30" height="30"> </a>
+        <a href="https://instagram.com" target="_blank" title="Ir a Instagram"><img src="img/insta.png" alt="instagram" width="30" height="30"></a>
+        <a href="https://twitter.com/home?lang=es" target="_blank" title="Ir a Twitter"><img src="img/tw.png" alt="twitter" width="30" height="30"></a>
+        <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="img/youtube.png" alt="youtube" width="30" height="30"></a>
     </div>
-
+</div>
+El azar te recomienda
+<div id="data">
+</div>
     <div>
         <p>Derechos reservados Grupo5 Codo_a_Codo</p>
     </div>
 </footer>
+
+<script>
+    const apiUrl = "https://openlibrary.org/authors/OL274606A/works.json?limit=500"
+    var arrayLibros = [];
+    async function obtenerObras() {
+      try {
+        let j = 0;
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        
+        for (i = 0; i < 450; i++) {
+          if (data.entries[i].authors.length < 3) {
+            if (data.entries[i].title.length < 42) {
+              arrayLibros[j] = data.entries[i].title;
+              j++;
+            }
+          }
+        }
+        console.log(arrayLibros);
+        randomBook()
+
+        myTimer = setInterval(function () { randomBook() }, 3500);
+
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min) + min);
+        }
+        function randomBook() {
+          let randomNumber = getRandomInt(0, arrayLibros.length);
+          document.getElementById("data").innerHTML = `${arrayLibros[randomNumber]}`;
+          
+        }
+      }
+      catch (error) { console.log('Ocurrió un error grave', error) }
+    }
+    obtenerObras()
+  </script>
+
 </body>
 </html>

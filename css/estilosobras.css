@@ -1,8 +1,12 @@
 * {
-    box-sizing: border-box;
+
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
 }
 
 :root {
@@ -13,7 +17,7 @@
     --color4: #32323A;
     --color5: #00140D;
     --color6: #D38D00;
-    --paraquesevea: black;
+
 
 }
 
@@ -42,7 +46,6 @@ body::-webkit-scrollbar-thumb {
     /*max-width: 120rem;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.5 fr;
     grid-auto-rows: repeat(5, 1fr);
     grid-template-areas:
         "header     header      header"
@@ -50,8 +53,8 @@ body::-webkit-scrollbar-thumb {
         "main       main       main"
         "obras     obras      obras"
         "footer      footer     footer";
-    background-color: var(--color3);
 }
+
 
 .contenedor .header {
     width: 100%;
@@ -68,7 +71,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nombre {
-    font-size: 6rem;
+    font-size: 5rem;
     padding-left: 1.5rem;
 }
 
@@ -79,8 +82,7 @@ body::-webkit-scrollbar-thumb {
     color: var(--color1);
     justify-content: end;
     padding: 2% 15% 3% 5%;
-    font-size: 1.8rem;
-    border: red solid 3px;
+    font-size: 1.6rem;
 }
 
 .links:hover {
@@ -92,8 +94,7 @@ body::-webkit-scrollbar-thumb {
 
 #links>a {
     font-family: 'Tw Cen MT Condensed';
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1rem;
     color: var(--color1)
 }
 
@@ -106,6 +107,9 @@ body::-webkit-scrollbar-thumb {
     grid-area: main;
     box-sizing: border-box;
     background-color: var(--color1);
+
+
+
 }
 
 .cont-cards {
@@ -133,6 +137,7 @@ body::-webkit-scrollbar-thumb {
 .cont-cards .cards:hover {
     margin-right: 80px;
     transform: rotate(3deg) translateY(-15px);
+    transition: calc(0.3s)
 }
 
 .cont-cards .cards[class*="c"] {
@@ -142,6 +147,9 @@ body::-webkit-scrollbar-thumb {
     align-content: center;
     padding: 0.8rem;
 }
+
+
+
 
 .img {
     border-radius: 10px;
@@ -157,23 +165,68 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--color1);
 }
 
-.obras:hover div:not(:hover) {
+.obras:hover .resumen:not(:hover) {
     background-color: var(--color4);
 }
 
 .obras>div {
+
     padding: 2rem;
     font-family: "OverpassMono";
-    height: 50vh;
+    height: auto;
+    font-size: 0.9rem;
+
+
 }
 
-.obras :hover #marte:not(:hover) {
-    color: #b4cf06;
-}
+
 
 .obras * h2 {
     margin: 1rem;
     font-family: "orbitron";
+}
+
+.obras * div {
+
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+
+
+
+
+}
+
+.comprar {
+    margin-right: 3rem;
+    padding: 0.6rem;
+    background: var(--color2);
+    text-shadow: var(--color5) 3px 2px 3px;
+    color: var(--color1);
+    box-shadow: 5px 5px 10px var(--color3);
+    border: var(--color2);
+    border-radius: 4px;
+
+
+}
+
+.volver {
+    margin-left: 3rem;
+    padding: 0.5rem;
+    background: var(--color2);
+    text-shadow: var(--color5) 3px 2px 3px;
+    color: var(--color1);
+    box-shadow: 5px 5px 10px var(--color3);
+    border-radius: 4px;
+}
+
+
+.resumen * a:hover {
+    background-color: var(--color6);
+    transform: rotate3d(0, 0, 1, 6.142rad);
+
+
+
 }
 
 .footer {
@@ -184,11 +237,24 @@ body::-webkit-scrollbar-thumb {
     color: var(--color1);
     justify-content: center;
     padding: 1rem;
+    font-family: 'Tw Cen MT Condensed';
+    font-size: 1.5rem;
 }
 
 #icon {
     display: flex;
     justify-content: space-between;
+}
+
+#icon * img:hover {
+    box-shadow: 8px 5px 10px var(--color5);
+
+    transform: rotate3d(0, 0, 1, 6.142rad);
+}
+
+#icon>a:hover {
+    transform: scale(120%);
+
 }
 
 .nombre:hover {
@@ -275,6 +341,90 @@ body::-webkit-scrollbar-thumb {
         text-shadow: #b4cf06 0px 0px,
             #0d22da 0px 0px;
     }
+
+
+}
+
+
+
+/*--------------*/
+/*MEDIAQUERIES*/
+@media (max-width: 768px) {
+
+    .header {
+        display: inline;
+    }
+
+    .nombre {
+        font-size: 4rem;
+    }
+
+    #links>a {
+        font-size: 1rem;
+        display: inline;
+    }
+
+    .cont-cards .cards[class*="c"] {
+        margin-left: -30px;
+        width: 50%;
+        height: 50%;
+    }
+
+    .Imgbio1 {
+        width: 126px;
+        height: 204px;
+        /*    display:none*/
+    }
+
+    .Imgbio2 {
+        width: 263px;
+        height: 264px;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+    .cont-cards {
+        margin-left: 1.5rem;
+        padding: 0.4rem;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+
+    .cont-cards .cards {
+        width: 40vw;
+    }
+
+    .cont-cards .cards[class*="c"] {
+        margin-left: -30px;
+        width: 80%;
+        height: 80%;
+    }
+
+    .volver {
+        margin-left: 0.6rem;
+    }
+
+    .nombre {
+        font-size: 3rem;
+    }
+
+    #links>a {
+        font-size: 0.7rem;
+    }
+
+    .Imgbio1 {
+        width: 90px;
+        height: 146px;
+    }
+
+    .Imgbio2 {
+        width: 130px;
+        height: 132px;
+    }
+
+
 
 
 }
