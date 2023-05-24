@@ -1,6 +1,6 @@
 * {
-  
-    margin:0px;
+
+    margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
 }
@@ -13,7 +13,7 @@
     --color4: #32323A;
     --color5: #00140D;
     --color6: #D38D00;
- 
+
 }
 
 @font-face {
@@ -65,13 +65,13 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     font-family: 'Tw Cen MT Condensed';
     padding-left: 5%;
-   
+
 }
 
 .nombre {
     font-size: 5rem;
     padding-left: 1.5rem;
-   
+
 }
 
 .contenedor .nav {
@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: end;
     padding: 2% 15% 3% 5%;
     font-size: 1.6rem;
-    border: red solid 3px;
+
 }
 
 .links:hover {
@@ -132,7 +132,7 @@ h3 {
     color: var(--color1);
     justify-content: center;
     padding: 1rem;
-    font-family:'Tw Cen MT Condensed';
+    font-family: 'Tw Cen MT Condensed';
     font-size: 1.5rem;
 }
 
@@ -144,10 +144,11 @@ h3 {
 
 #icon * img:hover {
     box-shadow: 8px 5px 10px var(--color5);
-  
+
     transform: rotate3d(0, 0, 1, 6.142rad);
 }
-#icon >a:hover{
+
+#icon>a:hover {
     transform: scale(120%);
 
 }
@@ -248,9 +249,10 @@ h3 {
     font-family: 'Tw Cen MT Condensed';
     color: white;
     margin-left: 0px;
+    margin-right: 480px;
 }
 
-#div_terminos_spam{
+#div_terminos_spam {
     font-size: 1.6rem;
     font-family: 'Tw Cen MT Condensed';
     color: white;
@@ -295,53 +297,52 @@ h3 {
 }
 
 #formulario #div_nombre_input i {
-    opacity:0;
+    opacity: 0;
 }
 
 #formulario #div_email_input i {
-    opacity:0;
+    opacity: 0;
 }
 
 #formulario #div_asunto_input i {
-    opacity:0;
+    opacity: 0;
 }
 
 #formulario #div_comentario_input i {
-    opacity:0;
+    opacity: 0;
 }
 
-.error{
-font-size: 1rem;
-color: red;
-}
-
-.failure-icon{
+.error {
+    font-size: 1rem;
     color: red;
 }
 
-.success-icon{
+.failure-icon {
+    color: red;
+}
+
+.success-icon {
     color: green;
 }
 
 #face,
 #insta,
 #twitter,
-#youtube{
+#youtube {
     margin-left: 0px;
     margin-right: 60px;
 }
+
 /* FORM CONTACTO*/
 /*------------------------------*/
 
-
-
-
 @media (max-width: 768px) {
-.contenedor .header {
+    .contenedor .header {
         display: inline;
         padding: 2% 5% 3% 5%;
     }
-    .nombre{
+
+    .nombre {
         font-size: 4rem;
     }
 
@@ -349,30 +350,28 @@ color: red;
         font-size: 1rem;
         display: inline
     }
+
     .contenedor .footer {
         font-size: 15px;
-        }
-
-
+    }
 }
 
-
-
 @media (max-width: 425px) {
-.nombre {    
+    .nombre {
         font-size: 3rem;
     }
-    #links{
+
+    #links {
         font-size: 0.7rem;
     }
+
     .contenedor .main {
         padding: 0.5em;
         font-size: 90%;
-}
-#links>a{
-    padding: 0.55rem 0.5rem;
-}
+    }
+
+    #links>a {
+        padding: 0.55rem 0.5rem;
+    }
 
 }
-
-
