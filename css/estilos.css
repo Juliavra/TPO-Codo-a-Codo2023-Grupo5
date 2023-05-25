@@ -15,10 +15,10 @@
 }
 
 @font-face {
-    font-family:"jmh-typewriter.regular";
+    font-family: "jmh-typewriter.regular";
     src: url(../fonts/jmh-typewriter.regular.ttf);
 
-    font-family:"OverpassMono";
+    font-family: "OverpassMono";
     src: url(../fonts/OverpassMono-VariableFont_wght.ttf);
 }
 
@@ -63,7 +63,6 @@ body::-webkit-scrollbar-thumb {
     padding-left: 5%;
 }
 
-
 .contenedor .nav {
     display: flex;
     background-color: var(--color2);
@@ -72,20 +71,18 @@ body::-webkit-scrollbar-thumb {
     justify-content: end;
     padding: 2% 15% 3% 5%;
     font-size: 1.6rem;
-  
 }
 
 .nombre {
-    font-size:5rem;
+    font-size: 5rem;
     padding-left: 1.5rem;
-   
 }
 
-.links:hover{
-    box-shadow:5px 5px 10px var(--color5);
-    transform:scale(110%);
+.links:hover {
+    box-shadow: 5px 5px 10px var(--color5);
+    transform: scale(110%);
     border-radius: 10px;
-    transform: rotate3d(0, 0, 1, 6.142rad);    
+    transform: rotate3d(0, 0, 1, 6.142rad);
 }
 
 #links>a {
@@ -102,7 +99,6 @@ body::-webkit-scrollbar-thumb {
 
 .contenedor .main {
     grid-area: main;
-
     display: flex;
     background-color: var(--color3);
     height: auto;
@@ -115,14 +111,12 @@ body::-webkit-scrollbar-thumb {
 #libro {
     margin: 0.7rem 1rem 0.7rem 1rem;
     justify-content: center;
-
-  
 }
 
-.ImgLibro { 
+.ImgLibro {
     width: 310px;
-    height:300px;
-    }
+    height: 300px;
+}
 
 #libro>div {
     font-size: 0.6rem;
@@ -130,16 +124,16 @@ body::-webkit-scrollbar-thumb {
     color: var(--color5);
     background-color: var(--color6);
     margin: 3rem;
-    box-shadow: 5px 5px 10px var(--color5); 
+    box-shadow: 5px 5px 10px var(--color5);
     border-radius: 5px;
 }
 
-#libro:hover img:not(:hover){
+#libro:hover img:not(:hover) {
     transform: scale(120%);
 }
 
-#libro>a :hover{
-transform: scale(120%);
+#libro>a :hover {
+    transform: scale(120%);
 }
 
 .info {
@@ -150,14 +144,12 @@ transform: scale(120%);
     color: var(--color1);
     background-color: var(--color2);
     padding: 1.4rem;
-
-    font-family:"OverpassMono";
+    font-family: "OverpassMono";
     font-size: calc(0.4rem + 0.4vw + 0.6vh);
     text-shadow: 1px 1px 3px black;
-    
     text-align: justify;
     border-radius: 1rem;
-    box-shadow: 5px 5px 10px var(--color5); 
+    box-shadow: 5px 5px 10px var(--color5);
     overflow: auto;
 }
 
@@ -170,20 +162,17 @@ transform: scale(120%);
     margin-bottom: 1rem;
     font-family: "orbitron";
     font-size: calc(0.5rem + 0.9vw+ 0.8vh);
-    font-weight: 500;  
+    font-weight: 500;
 }
 
 .contenedor .sidebar {
     grid-area: sidebar;
     background-color: var(--color1);
-    
-    
 }
 
 .yt1 {
     margin: 0.2rem;
     border-radius: 0.8rem;
-   
 }
 
 .video1 {
@@ -200,7 +189,7 @@ transform: scale(120%);
 h3 {
     padding-bottom: 0.8rem;
     font-family: 'Tw Cen MT Condensed';
-    padding-left:0.8rem ;
+    padding-left: 0.8rem;
     padding-right: 0.8rem;
 }
 
@@ -234,8 +223,6 @@ h3 {
     padding: 10 px;
     justify-content: center;
     align-items: center;
-
-   
 }
 
 .section2::-webkit-scrollbar {
@@ -261,7 +248,7 @@ h3 {
     overflow: auto;
 }
 
-.section2 .hover{
+.section2 .hover {
     overflow: hidden;
     justify-items: center;
     align-items: center;
@@ -269,25 +256,19 @@ h3 {
     width: 15rem;
     height: 15rem;
     margin: 1.5rem;
-    box-shadow: 5px 5px 10px var(--color5); 
+    box-shadow: 5px 5px 10px var(--color5);
 }
 
-.front{
-
+.front {
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
     justify-content: center;
     align-content: center;
-    
     font-size: small;
-
     box-sizing: border-box;
-   
     padding: 5rem 1.3rem 0rem 1.7rem;
-    
-
-    color: rgb(0,0,0,0);
+    color: rgb(0, 0, 0, 0);
 }
 
 .peli {
@@ -296,46 +277,44 @@ h3 {
     height: 15rem;
     justify-content: center;
     align-content: center;
-    
-    
 }
 
-.p1{
+.p1 {
     background-image: url(../img/Blade_Runner_\(1982_poster\)c.png);
     background-repeat: none;
     background-position: center;
     background-size: contain;
 }
 
-.p2{
+.p2 {
     background-image: url(../img/Total_Recall_\(1990\)_c.jpg);
     background-repeat: none;
     background-position: center;
     background-size: contain;
 }
 
-.p3{
+.p3 {
     background-image: url(../img/Minority_Report_Poster.jpg);
     background-repeat: none;
     background-position: center;
     background-size: contain;
 }
 
-.p4{
+.p4 {
     background-image: url(../img/scanner.jpg);
     background-repeat: none;
     background-position: center;
     background-size: contain;
 }
 
-.p5{
+.p5 {
     background-image: url(../img/radio_libre_albemutha\ .jpg);
     background-repeat: none;
     background-position: center;
     background-size: contain;
 }
 
-.p6{
+.p6 {
     background-image: url(../img/blade_runner_2049.jpg);
     background-repeat: none;
     background-position: center;
@@ -348,17 +327,16 @@ h3 {
     color: var(--color1);
     transform: scale(105%);
     transition: all 0.3 ease;
-    background-color:var(--color4);
+    background-color: var(--color4);
 }
-    
+
 
 .section2>div:hover {
     transform: scale(108%);
-    
 }
 
-.section2>div:hover .front:not(:hover){
-    background-color:var(--color4);
+.section2>div:hover .front:not(:hover) {
+    background-color: var(--color4);
     opacity: 80%;
     color: var(--color1);
 }
@@ -370,11 +348,11 @@ h3 {
     text-align: center;
     padding: 0.4rem;
     box-sizing: border-box;
-    width:70%;
+    width: 70%;
     font-size: calc(0.7em + 1vh);
     margin-left: 3rem;
-    box-shadow: 5px 5px 10px var(--color5); 
-} 
+    box-shadow: 5px 5px 10px var(--color5);
+}
 
 .contenedor .footer {
     display: grid;
@@ -383,8 +361,8 @@ h3 {
     height: 20vh;
     color: var(--color1);
     justify-content: center;
-    padding: 1rem;    
-    font-family:'Tw Cen MT Condensed';
+    padding: 1rem;
+    font-family: 'Tw Cen MT Condensed';
     font-size: 1.5rem;
 }
 
@@ -395,16 +373,15 @@ h3 {
 
 #icon * img:hover {
     box-shadow: 8px 5px 10px var(--color5);
-  
     transform: rotate3d(0, 0, 1, 6.142rad);
 }
-#icon >a:hover{
-    transform: scale(120%);
 
+#icon>a:hover {
+    transform: scale(120%);
 }
 
 .nombre:hover {
-    font-size: 6rem;
+    font-size: 5rem;
     animation: glitch 3s infinite;
     animation-timing-function: cubic-bezier(1, 0, 0, 1);
 }
@@ -492,176 +469,550 @@ h3 {
 /*  CAROUSEL */
 
 
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 600px;
-  position: relative;
-  margin: auto;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-/*------------------------------*/
+/*------------------------------------*/
+/* para dispositivos cuya anchura de pantalla sea inferior a width: 425px height  320*/
+@media (max-width: 425px) and (max-height: 320px) and (orientation:landscape) {
+    .contenedor .sidebar {
+        display: none;
+        opacity: 0;
+    }
+    body .contenedor .header {
+        height: 37vh;
+    }
 
-    /* para dispositivos cuya anchura de pantalla sea inferior a 768px */
-    @media (max-width: 768px) {
-        .contenedor .header {
-            display: inline;
-            padding: 2% 5% 3% 5%;
-        }
-        .nombre {
-            font-size: 4rem;
-        }
-        #links {
-            font-size: 1rem;
-            display: inline
-        }
-        .ImgLibro {
-            width: 217px;
-            height: 210px;
-        }
-        .contenedor .sidebar {
-            display: none;
-        }
-        .section2 .hover {
-            width: 12rem;
-            height: 12rem;
-        }
-        .section2 .front {        
-            width: 12rem;
-            height: 12rem;
-            padding: 3.4rem 1.3rem 0rem 1.7rem;
-       }
-        .titulo{         
-          padding: 0.3rem;
-          width:70%;
-          font-size: calc(0.5em + 0.6vh);
-          margin-left: 2.5rem;
-           }
-        .contenedor .footer {
-            font-size: 15px;
-        }
+    .header .nombre {
+        font-size: 3rem;
+    }
+
+    .header #links {
+        font-size: 1rem;
+    }
+
+    #links>a {
+        padding: 0.55rem 0.5rem;
+    }
+
+    body .contenedor .main {
+        padding: 0.5em;
+        font-size: 90%;
+        flex-direction: column;
+        width: auto;
+        height: 190vh;
+    }
+
+    #libro {
+        margin: 0.1rem 0.3rem 0.1rem 0.3rem;
+    }
+
+    #ImgLibro {
+        width: 255px;
+        height: 250px;
+        margin-left: 3rem;
+        margin-top: 10vh;
+    }
+
+    #libro>div {
+        font-size: 70%;
+        margin: 1rem;
+    }
+
+    body .contenedor .main .info {
+        font-size: 90%;
+        margin-top: 10vh;
+        margin-bottom: 20vh;
+        height: 100vh;
+        width: auto;
+    }
+
+    .img {
+        height: 60%;
+    }
+}
+
+@media (max-width: 320px) and (max-height: 425px) and (orientation:portrait) {
+    .contenedor .sidebar {
+        display: none;
+        opacity: 0;
+    }
+    body .contenedor .header {
+        height: 37vh;
+    }
+
+    .header .nombre {
+        font-size: 2rem;
+    }
+
+    .header #links {
+        font-size: 0.7rem;
+    }
+
+    #links>a {
+        padding: 0.55rem 0.5rem;
+    }
+
+    body .contenedor .main {
+        padding: 0.5em;
+        font-size: 90%;
+        flex-direction: column;
+        width: auto;
+        height: 160vh;
+    }
+
+    #libro {
+        margin: 0.1rem 0.3rem 0.1rem 0.3rem;
+    }
+
+    .main #libro #ImgLibro {
+        width: 255px;
+        height: 250px;
+        margin-left: 0px;
+        margin-top: 8vh;
+    }
+
+    #libro>div {
+        font-size: 70%;
+        margin: 0rem;
+        width: 250px;
+    }
+
+body .contenedor .main #libro #androides{
+    border: aqua 3px solid;
+    width: 50vw;
+    height: 4vh;
+}
+
+    body .contenedor .main .info {
+        font-size: 90%;
+        border: blue 3px solid;
+        height: 100vh;
+        width: auto;
+    }
+
+    .img {
+        height: 60%;
+    }
+}
+
+
+
+/*--------------------------------------------------*/
+/*
+@media (max-width: 375px) and (max-height: 667px) and (orientation:portrait) {
+    .contenedor .header {
+        height: 40vh;
+        display: inline;
+        //padding: 2% 5% 3% 5%;
+        padding: 0%;
+        margin: 0px;
+        justify-content:space-around;
+    }
+
+.contenedor .header .links{
+    font-size: 0.6rem;
+    display:inline;
+}
+    .header .nombre {
+        font-size: 2.6rem;
+    }
+
+    .header #links {
+
+        margin-top: 100px;
+        font-size: 0.7rem;
+        display: inline-flexbox
+    }
+
+    .ImgLibro {
+        width: 310px;
+        height: 300px;
+        margin-left: -2rem;
+        opacity: 0;
+    }
+
+    #info {
+        height: 50vh;
+        font-size: 0.599999rem;
+    }
+
+    .contenedor .main {
+        height: 85vh;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    
+    .main #libro #androides {
+        height: 6vh;
+        margin-top: -15px;
+        margin-bottom: -10px;
+        margin-left: 15px;
+
+    }
+
+    .contenedor .section1 {
+        margin-top: 0px;
+    }
+
+    .contenedor .sidebar {
+        display: none;
+        opacity: 0;
+    }
+
+    .section2 .hover {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .section2 .front {
+        width: 12rem;
+        height: 12rem;
+        padding: 3.4rem 1.3rem 0rem 1.7rem;
+    }
+
+    .titulo {
+        padding: 0.3rem;
+        width: 70%;
+        font-size: calc(0.5em + 0.6vh);
+        margin-left: 2.5rem;
+    }
+
+    .contenedor .footer {
+        font-size: 15px;
+    }
+}*/
+/*-------------------------------------------------*/
+
+
+/*and  (orientation:landscape)*/
+
+
+/* para dispositivos cuya anchura de pantalla sea inferior a 768px */
+@media (max-width: 768px) and (max-height: 600px) and (orientation:landscape) {
+    .contenedor .header {
+        height: 40vh;
+        display: inline;
+        /*padding: 2% 5% 3% 5%;*/
+        padding: 0%;
+        margin: 0px;
+    }
+
+    .nombre {
+        font-size: 4rem;
+    }
+
+    #links {
+        font-size: 1.5rem;
+        display: inline
+    }
+
+    .ImgLibro {
+        width: 310px;
+        height: 300px;
+        margin-left: -2rem;
+    }
+
+    #info {
+        height: 50vh;
+        font-size: 0.599999rem;
+    }
+
+    .contenedor .main {
+        height: 85vh;
+        box-sizing: border-box;
+    }
+
+    /*
+    #androides {
+        height: 10vh;
+        margin: 0px;
+    }
+*/
+    .main #libro #androides {
+        height: 6vh;
+        margin-top: -15px;
+        margin-bottom: -10px;
+        margin-left: 15px;
+
+    }
+
+    .contenedor .section1 {
+        margin-top: 0px;
+    }
+
+    .contenedor .sidebar {
+        display: none;
+        opacity: 0;
+    }
+
+    .section2 .hover {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .section2 .front {
+        width: 12rem;
+        height: 12rem;
+        padding: 3.4rem 1.3rem 0rem 1.7rem;
+    }
+
+    .titulo {
+        padding: 0.3rem;
+        width: 70%;
+        font-size: calc(0.5em + 0.6vh);
+        margin-left: 2.5rem;
+    }
+
+    .contenedor .footer {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) and (max-height: 768px) and (orientation:portrait) {
+    .contenedor #header {
+        height: 22vh;
+        display: inline;
+        /*padding: 2% 5% 3% 5%;*/
+        /*padding: 0%;
+        margin: 0px;*/
+        width: 100vw;
     }
 
 
-    /* para dispositivos cuya anchura de pantalla sea inferior a 425px  */
-    @media (max-width: 425px) {
-        .nombre {
-            font-size: 3rem;
-        }
-        #links {
-            font-size: 0.7rem;
-        }
-        #links>a{
-            padding: 0.55rem 0.5rem;
-        }
-        .contenedor .main {
-            padding: 0.5em;
-            font-size: 90%;
-            flex-direction:column;
-            width: auto;
-        }
-        #libro {
-            margin: 0.1rem 0.3rem 0.1rem 0.3rem;
-        }
-        .ImgLibro {
-            width: 155px;
-            height: 150px;
-            margin-left: 3rem;
-        }
-        #libro>div {
-            font-size: 70%;
-            margin: 1rem;
-        }
-        .info {
-            font-size: 70%;
-        }
-        .img {
-            height:60%;}
+    .nombre {
+        font-size: 4rem;
     }
 
-    /*@media (max-width: 768px){}*/
+    #links {
+        font-size: 1.27rem;
+        display: inline
+    }
 
+    #libro .ImgLibro {
+        width: 310px;
+        height: 300px;
+        margin-left: -3rem;
+    }
 
+    #info {
+        height: 53vh;
+        font-size: 0.599999rem;
+    }
 
+    .contenedor .main {
+        height: 70vh;
+        box-sizing: border-box;
+    }
 
+    .main #libro #androides {
+        height: 6vh;
+        margin-top: 0px;
+        margin-left: 30px;
+        font-size: 0.60rem;
+        width: 12vw;
 
+    }
 
+    .contenedor .section1 {
+        margin-top: 0px;
+    }
 
- 
+    .contenedor .sidebar {
+        display: none;
+        opacity: 0;
+    }
+
+    .section2 .hover {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .section2 .front {
+        width: 12rem;
+        height: 12rem;
+        padding: 3.4rem 1.3rem 0rem 1.7rem;
+    }
+
+    .titulo {
+        padding: 0.3rem;
+        width: 70%;
+        font-size: calc(0.5em + 0.6vh);
+        margin-left: 2.5rem;
+    }
+
+    .contenedor .footer {
+        font-size: 15px;
+    }
+}
+
+/*--------------------------------------------*/
+/*width: 800px  heigth: 1024px*/
+@media (max-width: 1024px) and (max-height: 800px) and (orientation:landscape) {
+    .contenedor .header {
+        display: inline;
+        padding: 2% 5% 3% 5%;
+        height: 29vh;
+    }
+
+    .contenedor .sidebar {
+        display: none;
+    }
+
+    .info {
+        height: 47vh;
+    }
+
+    .contenedor .main {
+        height: 70vh;
+    }
+
+    #libro {
+        height: 115vh;
+    }
+
+    .contenedor .footer {
+        height: 12vh;
+    }
+}
+
+/*width: 1024px  heigth: 800px*/
+@media (max-width: 800px) and (max-height: 1024px) and (orientation:portrait) {
+    .contenedor .header {
+        display: inline;
+        padding: 2% 5% 3% 5%;
+        height: 22vh;
+    }
+
+    .contenedor .sidebar {
+        display: none;
+        opacity: 0;
+    }
+
+    .info {
+        height: 62vh;
+    }
+
+    .contenedor .main {
+        height: 75vh;
+    }
+
+    #libro {
+        height: 115vh;
+    }
+
+    .ImgLibro {
+        margin-left: -6rem;
+        margin-right: -4rem;
+        width: 510px;
+        height: 500px;
+    }
+
+    .contenedor .section1 {
+        min-height: 65vh;
+    }
+
+    .contenedor .footer {
+        height: 12vh;
+    }
+}
