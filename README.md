@@ -27,12 +27,9 @@ lo que equivale a decir que un mensaje será recibido,
 en la cuenta de mail asignada, con el formato formspree.
 Queda hecha la invitación a comprobarlo.
 
-- Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
-bien de Google Fonts o similar.
-
 IFRAME<br>
-
-FontAwesome o Flaticon
+- Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
+bien de Google Fonts o similar.<br>
 
 <br>
 FONT<br>
