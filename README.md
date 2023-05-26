@@ -34,22 +34,25 @@ IFRAME<br>
 
 FontAwesome o Flaticon
 
-
-
-
-
-RESPONSIVE PAGE
-index.html
-
-- Tener al menos una página totalmente responsive con 3 puntos de corte para 3
-tamaños de dispositivos distintos.
+<br>
+RESPONSIVE PAGE<br>
+index.html<br>
+(max-width: 425px) and (max-height: 320px) <br>
+(max-width: 768px) and (max-height: 600px) <br>
+(max-width: 800px) and (max-height: 1024px)<br>
 
 API
+InternetArchives authors api
 - Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
 momento de entregar el TPO.
+
+
+
 - Nota: el TPO es grupal, deberán sincronizar el código del TPO en Github (o similar)
 enviando el link del repositorio al Instructor al momento de entregar el proyecto.
 Este requisito es obligatorio. 
+
+
 ¿Cómo se entrega?
 Cada Instructor informará la vía para subir el trabajo. Al momento de la entrega deberán
 informar: link a la web navegable, link al repositorio utilizado, integrantes y comentarios que
