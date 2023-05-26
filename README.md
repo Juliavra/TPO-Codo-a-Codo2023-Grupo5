@@ -27,24 +27,13 @@ lo que equivale a decir que un mensaje será recibido,
 en la cuenta de mail asignada, con el formato formspree.
 Queda hecha la invitación a comprobarlo.
 
-
-
 - Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
 bien de Google Fonts o similar.
-
+RESPONSIVE PAGE
 - Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
-RESPONSIVE PAGE
 
 API
-
-
-
-
-
-
-- Incorporar al menos una animación, transformación o una transición (se deberá
-indicar en qué parte del sitio web fue incorporada la animación).
 - Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
 momento de entregar el TPO.
 - Nota: el TPO es grupal, deberán sincronizar el código del TPO en Github (o similar)
