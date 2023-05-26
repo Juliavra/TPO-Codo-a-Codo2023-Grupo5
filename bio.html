@@ -28,6 +28,10 @@
     </header>
 
     <main id="bio2" class="main">
+      <div id="api">
+        <h2>El azar te recomienda: </h2>
+        <div id="data"></div>
+      </div>
         <div class="fila"> 
             <!--<h2 class="h2">Biografía</h2>-->
 
@@ -129,13 +133,12 @@
         <a href="https://www.youtube.com/" target="_blank" title="Ir a Youtube"><img src="img/youtube.png" alt="youtube" width="30" height="30"></a>
     </div>
 </div>
-El azar te recomienda
-<div id="data">
-</div>
+
     <div>
         <p>Derechos reservados Grupo5 Codo_a_Codo</p>
     </div>
-</footer>
+
+  </footer>
 
 <script>
     const apiUrl = "https://openlibrary.org/authors/OL274606A/works.json?limit=500"
@@ -166,7 +169,7 @@ El azar te recomienda
         }
         function randomBook() {
           let randomNumber = getRandomInt(0, arrayLibros.length);
-          document.getElementById("data").innerHTML = `${arrayLibros[randomNumber]}`;
+          document.getElementById("data_api").innerHTML = `${arrayLibros[randomNumber]}`;
           
         }
       }
