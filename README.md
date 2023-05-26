@@ -50,6 +50,7 @@ InternetArchives authors api (https://openlibrary.org/developers/api)<br>
 Su consumo proporciona los libros pertenecientes al escritor, de forma random para el visitante en la bio. <br><br>
 GITHUB<br>
 https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5<br>
+<br>
 GITHUB PAGES<br>
 https://juliavra.github.io/TPO-Codo-a-Codo2023-Grupo5/index.html<br>
 <br>
