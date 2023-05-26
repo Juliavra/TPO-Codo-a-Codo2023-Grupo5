@@ -33,9 +33,11 @@ bien de Google Fonts o similar.
 IFRAME<br>
 
 FontAwesome o Flaticon
-FONT
-https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/blob/main/fonts/OverpassMono-VariableFont_wght.ttf
 
+<br>
+FONT<br>
+https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/blob/main/fonts/OverpassMono-VariableFont_wght.ttf<br>
+https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/blob/main/fonts/jmh-typewriter.regular.ttf<br>
 <br>
 RESPONSIVE PAGE<br>
 index.html<br>
