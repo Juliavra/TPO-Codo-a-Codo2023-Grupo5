@@ -29,6 +29,14 @@ Queda hecha la invitación a comprobarlo.
 
 - Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
 bien de Google Fonts o similar.
+
+IFRAME<br>
+
+
+
+
+
+
 RESPONSIVE PAGE
 - Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
