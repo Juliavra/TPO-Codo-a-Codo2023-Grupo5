@@ -42,11 +42,11 @@ index.html<br>
 (max-width: 800px) and (max-height: 1024px)<br>
 
 API
-InternetArchives authors api
-- Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
-momento de entregar el TPO.
+InternetArchives authors api (https://openlibrary.org/developers/api)
 
 
+
+https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/index.html
 
 - Nota: el TPO es grupal, deberán sincronizar el código del TPO en Github (o similar)
 enviando el link del repositorio al Instructor al momento de entregar el proyecto.
