@@ -43,11 +43,13 @@ index.html<br>
 <br>
 API<br>
 InternetArchives authors api (https://openlibrary.org/developers/api)<br>
+
 <br>
 <br>
 GITHUB<br>
 https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5<br>
 <br>
+NETLIFY<br>
 <br>
 
 
