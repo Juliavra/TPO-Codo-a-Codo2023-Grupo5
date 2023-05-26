@@ -2,7 +2,7 @@
 
 Integrantes <br>
 Vanina Vranjes    Dni. 26282188 <br>
-Julián Avramides  Dni: 25678899 <br>
+Juli&aacuten Avramides  Dni: 25678899 <br>
 Andres Romero     Dni: 29671918 <br>
 Cortes Eliana     Dni: 35213331<br>
 
