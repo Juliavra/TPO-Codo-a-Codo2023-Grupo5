@@ -48,11 +48,10 @@ index.html<br>
 API<br>
 InternetArchives authors api (https://openlibrary.org/developers/api)<br>
 Su consumo proporciona los libros pertenecientes al escritor, de forma random para el visitante en la bio. <br><br>
-GITHUB PAGES<br>
-https://juliavra.github.io/TPO-Codo-a-Codo2023-Grupo5/index.html<br>
-<br>
 GITHUB<br>
 https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5<br>
+GITHUB PAGES<br>
+https://juliavra.github.io/TPO-Codo-a-Codo2023-Grupo5/index.html<br>
 <br>
 NETLIFY<br>
 https://codo-a-codo-2023-grupo-5.netlify.app/<br>
