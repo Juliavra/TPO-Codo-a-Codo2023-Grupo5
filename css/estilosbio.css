@@ -327,6 +327,18 @@ span {
     .main{
         font-size: medium;
     }
+    #api{
+        height: 30vh;
+        padding: 0.6rem;
+        flex-direction: column;
+     
+    }
+    #api> h2{
+        margin: 0.5rem;
+    }
+    #data{
+         margin: 0.5rem;}
+
 }
 
 @media (max-width: 425px) {
@@ -359,4 +371,16 @@ span {
         padding: 0.5rem;
         font-size: smaller;
     }
+    #api{
+        height: 30vh;
+        padding: 0.6rem;
+        flex-direction: column;
+     
+    }
+    #api> h2{
+        margin: 0.5rem;
+    }
+    #data{
+         margin: 0.5rem;}
+
 }
