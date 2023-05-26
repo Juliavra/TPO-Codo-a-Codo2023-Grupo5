@@ -24,7 +24,7 @@ que asunto y cometario no esten sin completar,
 que los terminos y el aviso de spam hayan sido aceptados.
 Por lo demás el mismo es completamente funcional, 
 lo que equivale a decir que un mensaje será recibido,
-en la cuenta de mail asignada
+en la cuenta de mail asignada, con elñ formato formspree.
 
 
 es completamente funcional
