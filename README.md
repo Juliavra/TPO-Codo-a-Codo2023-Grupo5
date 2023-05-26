@@ -32,12 +32,15 @@ bien de Google Fonts o similar.
 
 IFRAME<br>
 
+FontAwesome o Flaticon
 
 
 
 
 
 RESPONSIVE PAGE
+index.html
+
 - Tener al menos una página totalmente responsive con 3 puntos de corte para 3
 tamaños de dispositivos distintos.
 
