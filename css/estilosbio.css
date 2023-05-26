@@ -287,9 +287,19 @@ span {
     font-size: 1.3rem;
     align-self: center;
     margin-left: 3rem;
+    padding-top: 3rem;
 
 }
 
+#data_api{
+   
+    font-family: 'Tw Cen MT Condensed';
+    font-size: 1.3rem;
+    align-self: center;
+    margin-left: 1rem;
+    padding-top: 0.1rem;
+
+}
 
 
 /*------------------------------------*/
