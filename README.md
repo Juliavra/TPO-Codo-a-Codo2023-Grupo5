@@ -14,10 +14,10 @@ En los titulos de cada pagina, ubicados en el Header.<br>
 <br>
 TRANSFORMACIONES<br>
 En los enlaces a las distintas paginas,
-En los iconos, enlances de redes sociales, ubicados en Footer.
-En las tarjetas ubicadas, en pagina Obras.
-
-FORMULARIO
+En los iconos, enlances de redes sociales, ubicados en Footer.<br>
+En las tarjetas ubicadas, en pagina Obras.<br>
+<br>
+FORMULARIO<br>
 El mismo valida que el usuario no sea vacio o menor a 3 caracteres, 
 que el mail tenga la estructura correcta,
 que asunto y cometario no esten sin completar,
