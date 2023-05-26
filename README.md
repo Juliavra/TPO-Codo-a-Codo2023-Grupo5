@@ -33,6 +33,7 @@ bien de Google Fonts o similar.
 IFRAME<br>
 
 FontAwesome o Flaticon
+FONT
 
 <br>
 RESPONSIVE PAGE<br>
