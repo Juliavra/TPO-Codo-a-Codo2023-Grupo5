@@ -45,6 +45,7 @@ API<br>
 InternetArchives authors api (https://openlibrary.org/developers/api)<br>
 
 <br>
+GITHUB PAGES
 <br>
 GITHUB<br>
 https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5<br>
@@ -52,13 +53,9 @@ https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5<br>
 NETLIFY<br>
 <br>
 
-
-- Nota: el TPO es grupal, deberán sincronizar el código del TPO en Github (o similar)
-enviando el link del repositorio al Instructor al momento de entregar el proyecto.
-Este requisito es obligatorio. 
-
-
 ¿Cómo se entrega?
 Cada Instructor informará la vía para subir el trabajo. Al momento de la entrega deberán
-informar: link a la web navegable, link al repositorio utilizado, integrantes y comentarios que
-consideren necesarios agregar a la entrega.
+informar: link a la web navegable, link al repositorio utilizado, 
+
+
+comentarios 
