@@ -1,13 +1,13 @@
 # TPO-Codo-a-Codo2023-Grupo5
 
 Integrantes: 
-Vanina Vranjes    Dni. 26282188
-Julián Avramides  Dni: 25678899
-Andres Romero     Dni: 29671918
-Cortes Eliana     Dni: 35213331
+Vanina Vranjes    Dni. 26282188,
+Julián Avramides  Dni: 25678899,
+Andres Romero     Dni: 29671918,
+Cortes Eliana     Dni: 35213331.
 
 Profesora:
-Johana Rangel
+Johana Rangel.
 
 ANIMACION
 En los titulos de cada pagina, ubicados en el Header.
@@ -24,11 +24,17 @@ que asunto y cometario no esten sin completar,
 que los terminos y el aviso de spam hayan sido aceptados.
 Por lo demás el mismo es completamente funcional, 
 lo que equivale a decir que un mensaje será recibido,
-en la cuenta de mail asignada, con elñ formato formspree.
+en la cuenta de mail asignada, con el formato formspree.
+Queda hecha la invitación a comprobarlo.
 
 
-es completamente funcional
 
+- Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
+bien de Google Fonts o similar.
+
+- Tener al menos una página totalmente responsive con 3 puntos de corte para 3
+tamaños de dispositivos distintos.
+RESPONSIVE PAGE
 
 API
 
@@ -36,13 +42,7 @@ API
 
 
 
-- Contener un formulario de contacto con validación realizada mediante Javascript.
-Opcional: el formulario podrá enviar un email utilizando algún servicio externo
-destinado para ello.
-- Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
-bien de Google Fonts o similar.
-- Tener al menos una página totalmente responsive con 3 puntos de corte para 3
-tamaños de dispositivos distintos.
+
 - Incorporar al menos una animación, transformación o una transición (se deberá
 indicar en qué parte del sitio web fue incorporada la animación).
 - Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
