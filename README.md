@@ -34,6 +34,7 @@ IFRAME<br>
 
 FontAwesome o Flaticon
 FONT
+https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/blob/main/fonts/OverpassMono-VariableFont_wght.ttf
 
 <br>
 RESPONSIVE PAGE<br>
