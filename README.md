@@ -40,13 +40,16 @@ index.html<br>
 (max-width: 425px) and (max-height: 320px) <br>
 (max-width: 768px) and (max-height: 600px) <br>
 (max-width: 800px) and (max-height: 1024px)<br>
+<br>
+API<br>
+InternetArchives authors api (https://openlibrary.org/developers/api)<br>
+<br>
+<br>
+GITHUB<br>
+https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5<br>
+<br>
+<br>
 
-API
-InternetArchives authors api (https://openlibrary.org/developers/api)
-
-
-
-https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/index.html
 
 - Nota: el TPO es grupal, deberán sincronizar el código del TPO en Github (o similar)
 enviando el link del repositorio al Instructor al momento de entregar el proyecto.
