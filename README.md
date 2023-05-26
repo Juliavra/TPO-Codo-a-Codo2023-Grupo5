@@ -1,18 +1,18 @@
 # TPO-Codo-a-Codo2023-Grupo5
 
-Integrantes: <br>
-Vanina Vranjes    Dni. 26282188,
-Julián Avramides  Dni: 25678899,
-Andres Romero     Dni: 29671918,
-Cortes Eliana     Dni: 35213331.
+Integrantes <br>
+Vanina Vranjes    Dni. 26282188 <br>
+Julián Avramides  Dni: 25678899 <br>
+Andres Romero     Dni: 29671918 <br>
+Cortes Eliana     Dni: 35213331<br>
 
-Profesora:
-Johana Rangel.
-
-ANIMACION
-En los titulos de cada pagina, ubicados en el Header.
-
-TRANSFORMACIONES
+Profesora<br>
+Johana Rangel.<br>
+<br>
+ANIMACION<br>
+En los titulos de cada pagina, ubicados en el Header.<br>
+<br>
+TRANSFORMACIONES<br>
 En los enlaces a las distintas paginas,
 En los iconos, enlances de redes sociales, ubicados en Footer.
 En las tarjetas ubicadas, en pagina Obras.
