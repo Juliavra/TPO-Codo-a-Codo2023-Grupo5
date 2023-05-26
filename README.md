@@ -37,9 +37,9 @@ FontAwesome o Flaticon
 <br>
 RESPONSIVE PAGE<br>
 index.html<br>
-(max-width: 425px) and (max-height: 320px) <br>
-(max-width: 768px) and (max-height: 600px) <br>
-(max-width: 800px) and (max-height: 1024px)<br>
+(425px x 320px) <br>
+(768px x 600px) <br>
+(1024px x 800px)<br>
 <br>
 API<br>
 InternetArchives authors api (https://openlibrary.org/developers/api)<br>
