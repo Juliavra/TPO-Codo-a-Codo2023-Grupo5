@@ -43,15 +43,16 @@ index.html<br>
 <br>
 API<br>
 InternetArchives authors api (https://openlibrary.org/developers/api)<br>
-
 <br>
-GITHUB PAGES
+GITHUB PAGES<br>
+https://juliavra.github.io/TPO-Codo-a-Codo2023-Grupo5/index.html<br>
 <br>
 GITHUB<br>
 https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5<br>
 <br>
 NETLIFY<br>
-<br>
+https://codo-a-codo-2023-grupo-5.netlify.app/<br>
+
 
 ¿Cómo se entrega?
 Cada Instructor informará la vía para subir el trabajo. Al momento de la entrega deberán
