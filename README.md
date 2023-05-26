@@ -28,6 +28,7 @@ en la cuenta de mail asignada, con el formato formspree.
 Queda hecha la invitación a comprobarlo.
 
 IFRAME<br>
+En el sidebar del index.html se encuentran dos iframes, con referencias a Youtube.<br>
 - Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
 bien de Google Fonts o similar.<br>
 
@@ -53,11 +54,5 @@ https://juliavra.github.io/TPO-Codo-a-Codo2023-Grupo5/index.html<br>
 <br>
 NETLIFY<br>
 https://codo-a-codo-2023-grupo-5.netlify.app/<br>
-
-
-¿Cómo se entrega?
-Cada Instructor informará la vía para subir el trabajo. Al momento de la entrega deberán
-informar: link a la web navegable, link al repositorio utilizado, 
-
 
 comentarios 
