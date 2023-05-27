@@ -409,7 +409,12 @@ body::-webkit-scrollbar-thumb {
     .nombre {
         font-size: 3rem;
     }
+  
+    .nombre:hover {
 
+        font-size: 3.5rem;
+       
+    }
     #links>a {
         font-size: 0.7rem;
     }
