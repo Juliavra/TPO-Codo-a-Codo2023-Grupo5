@@ -38,10 +38,9 @@ https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/blob/main/fonts/OverpassM
 https://github.com/Juliavra/TPO-Codo-a-Codo2023-Grupo5/blob/main/fonts/jmh-typewriter.regular.ttf<br>
 <br>
 RESPONSIVE PAGE<br>
+obras.html<br>
 index.html<br>
-(425px x 320px) <br>
-(768px x 600px) <br>
-(1024px x 800px)<br>
+
 <br>
 API<br>
 InternetArchives authors api (https://openlibrary.org/developers/api)<br>
