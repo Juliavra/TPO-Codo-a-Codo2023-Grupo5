@@ -46,6 +46,7 @@ body::-webkit-scrollbar-thumb {
         "section1   section1   section1"
         "section2   section2   section2"
         "footer      footer     footer";
+    overflow-x:hidden;
 }
 
 .contenedor .header {
