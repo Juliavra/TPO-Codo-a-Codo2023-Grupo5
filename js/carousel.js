@@ -51,6 +51,7 @@ libro.addEventListener("mouseenter", libro_audio_plays);
 libro.addEventListener("mouseleave", libro_audio_pauses)
 
 function libro_audio_plays() {
+    document.getElementById("myAudio").volume=0.2;
   document.getElementById("myAudio").play();
   audio.play();
 }
