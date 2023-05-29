@@ -29,8 +29,6 @@ Queda hecha la invitación a comprobarlo.
 
 IFRAME<br>
 En el sidebar del index.html se encuentran dos iframes, con referencias a Youtube.<br>
-- Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
-bien de Google Fonts o similar.<br>
 
 <br>
 FONT<br>
